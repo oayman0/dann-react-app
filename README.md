@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Dann Business Park - User 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the user part of the social commerce platform DANN - Pure React Js Project. Visit us at [Dann.store](http://dann.store).
 
 ## Available Scripts
 
