@@ -44,7 +44,7 @@ import Bars from '../../assets/images/bars.png';
           return (
                <Fragment>
 <div className="TopSectionDown">
-<Navbar fixed={"top"} className="navbar" bg="light">
+<Navbar fixed={"top"} className="navbar">
 
     <Container fluid={"true"} className="fixed-top shadow-sm p-2 mb-0 bg-white">
          <Row>

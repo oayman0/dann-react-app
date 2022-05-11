@@ -8,7 +8,9 @@ class HomeTop extends Component {
           return (
                <Fragment>
         <Container className="p-0 m-0 overflow-hidden" fluid={true}>
-                         <Row>
+                         
+        <HomeSlider />
+                         {/* <Row>
                               <Col lg={3} md={3} sm={12}>
                               <MegaMenu />
                               </Col>
@@ -16,7 +18,7 @@ class HomeTop extends Component {
                               <Col lg={9} md={9} sm={12}>
                               <HomeSlider />
                               </Col>
-                         </Row>
+                         </Row> */}
                     </Container>
                </Fragment>
           )

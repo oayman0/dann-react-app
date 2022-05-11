@@ -10,6 +10,9 @@ import HomeTop from '../components/home/HomeTop'
 import HomeTopMobile from '../components/home/HomeTopMobile'
 import NewArrival from '../components/home/NewArrival'
 
+import SidebarDesktop from '../components/common/SidebarDesktop'
+import {Container,Row,Col,Card} from 'react-bootstrap'
+
 export class HomePage extends Component {
 
   //check
@@ -21,13 +24,28 @@ export class HomePage extends Component {
      render() { 
           return (   
                <Fragment> 
-                    <div className="Desktop">
-               <NavMenuDesktop />
-               <HomeTop />
-                    </div>
 
+   <Container className="p-0 m-0 overflow-hidden" fluid={true}>
+     <Row>
+     <div className="Desktop">
+               <NavMenuDesktop />
+                    </div>
                     <div className="Mobile">
                     <NavMenuMobile />  
+                    </div>          
+     </Row>
+              <Row>
+                    <Col lg={2} md={2} sm={2} xs={2}>      
+                      <SidebarDesktop />
+                    </Col>
+                    <Col lg={10} md={10} sm={10}xs={10}>
+
+
+
+                    <div className="Desktop">
+               <HomeTop/>
+                    </div>
+                    <div className="Mobile">
                     <HomeTopMobile />
                     </div>                       
                     
@@ -43,7 +61,15 @@ export class HomePage extends Component {
                     <div className="Mobile">
                     <FooterMobile/>
                     </div>
-                    
+              
+
+
+
+              
+                    </Col> 
+                </Row>
+
+            </Container>
                </Fragment>
           )
      }

@@ -1,0 +1,77 @@
+ /* The sidebar menu */
+ .sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 16.667%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #0071CE; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    margin-right: 0px;
+    padding-top:7%;
+
+
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 10px 10px 10px 10px ;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+
+        text-align: left;
+  }
+  .sidenav h4 {
+      display: inline;
+      padding-left: 15px;
+      padding-right: 10px;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #ffc22e;
+   
+    background-color: #0168bd;
+   
+    
+  }
+
+  
+  /* Style page content */
+  .mainSidebar {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+
+  .sidebarDown{
+   
+   margin-top: 75%;
+}
+  .sidebarDown h4{
+   
+    font-size: 12pt;
+}
+
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 10%; font-size: 1pt;  }
+   .sidenav a h4{display: none; }
+   .sidenav a {font-size: 16pt;text-align: center;}
+  } 
+
+    /* On smaller screens, where width is less than 800px, change the style of the sidebar (less padding and a smaller font size) */
+    @media screen and (max-width: 800px) {
+        .sidenav {padding-top: 15%;}
+        .sidenav a h4{display: none;}
+        .sidenav a {font-size: 16pt;
+            text-align: center;}
+            .sidebarDown{margin-top: 75%;}
+                .badge{
+font-size: 50%;
+                }             }
+
+      
