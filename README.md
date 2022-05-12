@@ -5,9 +5,13 @@ This is the user part of the social commerce platform DANN - Pure React Js Proje
 ## Available Scripts
 
 In the project directory, you can run:
+
 1
+
 ### `npm install`
+
 2
+
 ### `npm start`
 
 Runs the app in the development mode.\
