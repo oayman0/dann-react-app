@@ -13,7 +13,7 @@ import NewArrival from '../components/home/NewArrival'
 import SidebarDesktop from '../components/common/SidebarDesktop'
 import {Container,Row,Col,Card} from 'react-bootstrap'
 
-export class HomePage extends Component {
+export class PeoplePage extends Component {
 
   //check
 
@@ -42,17 +42,18 @@ export class HomePage extends Component {
 
 
 {/* Insert Content Here */}
-                    <div className="Desktop">
-               <HomeTop/>
-                    </div>
-                    <div className="Mobile">
-                    <HomeTopMobile />
-                    </div>                       
                     
-                    <FeaturedProducts />
-                    <NewArrival />
-                    <Categories />
-                    <Collection />
+
+
+
+
+
+
+
+
+
+
+                    
                     
                     <div className="Desktop">
                     <FooterDesktop/>
@@ -75,4 +76,4 @@ export class HomePage extends Component {
      }
 }
 
-export default HomePage
+export default PeoplePage

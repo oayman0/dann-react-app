@@ -13,8 +13,8 @@ export class FooterDesktop extends Component {
      <Row className="px-0 my-5">
           <Col className="p-2" lg={3} md={3} sm={6} xs={12}>
                <h5 className="footer-menu-title">OFFICE ADDRESS</h5>
-               <p>1635 Franklin Street Montgomery, Near Sherwood Mall. AL 36104 <br></br>
-               Email: Support@easylearningbd.com
+               <p>Al-Mansoura, Aldaqahliya, Egypt<br></br>
+               Email: DannBusinessPark@gmail.com
                </p>
                <h5 className="footer-menu-title">SOCIAL LINK</h5>
                <a href=""><i className="fab m-1 h4 fa-facebook"></i></a>
@@ -52,7 +52,7 @@ export class FooterDesktop extends Component {
      <Container fluid={true} className="text-center m-0 pt-3 pb-1 bg-dark">
                     <Container>
                          <Row>
-       <h6 className="text-white">© Copyright 2021 by easy Shop, All Rights Reserved</h6>
+       <h6 className="text-white">© Copyright 2022, Dann Business Park, All Rights Reserved</h6>
                          </Row>
                     </Container>
                </Container> 
