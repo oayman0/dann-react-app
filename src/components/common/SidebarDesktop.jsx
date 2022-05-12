@@ -21,7 +21,7 @@ class SidebarDesktop extends Component {
 <div className="sidebarDown">
  <Link to="/messages" className="btn"><i class="far fa-comments"></i><h4>Messages</h4><sup><span className="badge text-white bg-warning">5</span></sup></Link>
  <Link to="/notification" className="btn"><i class="far fa-bell"></i><h4>Notifications</h4></Link>
- <Link to="/profile" className="btn"><i class="far fa-user-circle"></i><h4>Profile</h4></Link>
+<Link to="/profile" className="btn"><i class="far fa-user-circle"></i><h4>Profile</h4></Link>
  </div>
 
 </div>
