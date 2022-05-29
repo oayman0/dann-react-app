@@ -16,6 +16,10 @@ import PeoplePage from '../pages/PeoplePage';
 import MessagesPage from '../pages/MessagesPage';
 import ProfilePage from '../pages/ProfilePage';
 
+import LandingPage from '../pages/LandingPage';
+import LoginPage from '../pages/LoginPage';
+import SignUpPage from '../pages/SignUpPage';
+
 
  class AppRoute extends Component {
   render() {
@@ -26,7 +30,7 @@ import ProfilePage from '../pages/ProfilePage';
                  {/*v5: <Route exact to='/' component ={HomePage}/>
                  V6: as follows */}
                  <Route path='/' element={<HomePage/>} />
-                 <Route path="/login" element={<UserLoginPage/>} />
+                 <Route path="/userlogin" element={<UserLoginPage/>} />
                  <Route  path="/contact" element={<ContactPage/>} />
 
                  <Route  path="/purchase" element={<PurchasePage/>} />
@@ -41,6 +45,11 @@ import ProfilePage from '../pages/ProfilePage';
                <Route  path="/people" element={<PeoplePage/>} />
                <Route  path="/messages" element={<MessagesPage/>} />
                <Route  path="/profile" element={<ProfilePage/>} />
+               
+               <Route  path="/landing" element={<LandingPage/>} />
+               <Route  path="/login" element={<LoginPage/>} />
+               <Route  path="/signup" element={<SignUpPage/>} />
+
           </Routes>
           
       </Fragment>

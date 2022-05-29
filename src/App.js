@@ -3,11 +3,14 @@ import { BrowserRouter } from 'react-router-dom'
 import AppRoute from './route/AppRoute'
 
 
+
 class App extends Component {
   render() {
     return (
+      
      
       <Fragment>
+       
 
           <BrowserRouter>
 

@@ -13,6 +13,11 @@ import NewArrival from '../components/home/NewArrival'
 import SidebarDesktop from '../components/common/SidebarDesktop'
 import {Container,Row,Col,Card} from 'react-bootstrap'
 
+
+
+
+
+
 export class PeoplePage extends Component {
 
   //check
@@ -42,6 +47,8 @@ export class PeoplePage extends Component {
 
 
 {/* Insert Content Here */}
+
+
                     
 
 

@@ -1,0 +1,167 @@
+/*===========================
+    10.DOWNLOAD APP css 
+===========================*/
+.download_app_area {
+    position: relative;
+  }
+  
+  .download_app_image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 9;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .download_app_image .image img {
+      width: 480px;
+    }
+  }
+  
+  .download_app {
+    background: -webkit-gradient(linear, left top, right top, from(#291584), to(#9133e2));
+    background: linear-gradient(to right, #291584 0%, #9133e2 100%);
+    padding: 115px 60px 120px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 8;
+    margin-top: 111px;
+  }
+  
+  @media (max-width: 767px) {
+    .download_app {
+      padding: 115px 30px 120px;
+    }
+  }
+  
+  .download_shape {
+    position: absolute;
+    top: 50%;
+    left: -80px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+  
+  .download_shape_2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.21;
+  }
+  
+  .download_app_content {
+    max-width: 470px;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .download_app_content {
+      max-width: 410px;
+    }
+  }
+  
+  .download_app_content .download_title {
+    color: #fff;
+    font-size: 44px;
+    font-weight: 700;
+    nt-weight: 700;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .download_app_content .download_title {
+      font-size: 40px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .download_app_content .download_title {
+      font-size: 30px;
+    }
+  }
+  
+  .download_app_content p {
+    color: #fff;
+    margin-top: 15px;
+  }
+  
+  .download_app_content ul {
+    padding-top: 30px;
+  }
+  
+  .download_app_content ul li {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .download_app_content ul li + li {
+    margin-left: 30px;
+  }
+  
+  @media (max-width: 767px) {
+    .download_app_content ul li + li {
+      margin-left: 20;
+    }
+  }
+  
+  .download_app_content ul li a {
+    background-color: #fff;
+    padding: 8px 20px;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 767px) {
+    .download_app_content ul li a {
+      padding: 4px 10px 3px;
+    }
+  }
+  
+  .download_app_content ul li a .icon i {
+    font-size: 25px;
+    color: #3698EE;
+  }
+  
+  @media (max-width: 767px) {
+    .download_app_content ul li a .icon i {
+      font-size: 18px;
+    }
+  }
+  
+  .download_app_content ul li a .content {
+    padding-left: 15px;
+  }
+  
+  @media (max-width: 767px) {
+    .download_app_content ul li a .content {
+      padding-left: 10px;
+    }
+  }
+  
+  .download_app_content ul li a .content .title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 767px) {
+    .download_app_content ul li a .content .title {
+      font-size: 16px;
+    }
+  }
+  
+  .download_app_content ul li a .content p {
+    margin-top: 0;
+    color: #677284;
+    font-size: 12px;
+  }
+  
+  @media (max-width: 767px) {
+    .download_app_content ul li a .content p {
+      font-size: 11px;
+    }
+  }
+  
