@@ -24,10 +24,10 @@ import Download from '../../assets/landingAssets/images/download.png';
               </div>
               <div className="download_app_content">
                 <h3 className="download_title">Download The App</h3>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod.</p>
+                <p>Download our mobile app, and shop on the go</p>
                 <ul>
                   <li>
-                    <a className="d-flex align-items-center" href="#">
+                    <a target="_blank" className="d-flex align-items-center" href="https://play.google.com/">
                       <span className="icon">
                         <i className="lni lni-play-store" />
                       </span>
@@ -38,7 +38,7 @@ import Download from '../../assets/landingAssets/images/download.png';
                     </a>
                   </li>
                   <li>
-                    <a className="d-flex align-items-center" href="#">
+                    <a target="_blank" className="d-flex align-items-center" href="https://www.apple.com/eg/app-store/">
                       <span className="icon">
                         <i className="lni lni-apple" />
                       </span>

@@ -18,8 +18,8 @@ import Background from '../../assets/landingAssets/images/hero.jpg';
               <div className="row justify-content-center">
                 <div className="col-lg-8 col-md-10">
                   <div className="hero_content text-center">
-                    <h2 className="hero_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Simple Bootstrap 5<br /> Website Template</h2>
-                    <p className="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">A super simple website template based on Bootstrap 5 and HTML5, comes with all essential <br className="d-none d-xl-block" /> elements &amp; features to get started and ready to use for almost any type of business websites.</p>
+                    <h2 className="hero_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Dann Business Park</h2>
+                    <p className="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s"> Egypt's first social commerce platform <br className="d-none d-xl-block" />  A High Technology Enabled E-Commerce Platform for Micro and Small Businesses </p>
                     <a href="#features" className="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Explore</a>
                   </div> {/* hero content */}
                 </div>

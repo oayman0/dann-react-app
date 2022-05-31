@@ -19,6 +19,7 @@ import ProfilePage from '../pages/ProfilePage';
 import LandingPage from '../pages/LandingPage';
 import LoginPage from '../pages/LoginPage';
 import SignUpPage from '../pages/SignUpPage';
+import LandingHeader from '../components/landing/LandingHeader';
 
 
  class AppRoute extends Component {
@@ -29,10 +30,13 @@ import SignUpPage from '../pages/SignUpPage';
           <Routes>
                  {/*v5: <Route exact to='/' component ={HomePage}/>
                  V6: as follows */}
-                 <Route path='/' element={<HomePage/>} />
+                 <Route path='/' element={<LandingPage/>} />
+                
+                
+                 {/* 
+                 
                  <Route path="/userlogin" element={<UserLoginPage/>} />
                  <Route  path="/contact" element={<ContactPage/>} />
-
                  <Route  path="/purchase" element={<PurchasePage/>} />
                <Route  path="/privacy" element={<PrivacyPage/>} />
                <Route  path="/refund" element={<RefundPage/>} />
@@ -44,11 +48,20 @@ import SignUpPage from '../pages/SignUpPage';
                <Route  path="/marketplace" element={<MarketPlacePage/>} />
                <Route  path="/people" element={<PeoplePage/>} />
                <Route  path="/messages" element={<MessagesPage/>} />
-               <Route  path="/profile" element={<ProfilePage/>} />
+               <Route  path="/profile" element={<ProfilePage/>} /> 
                
-               <Route  path="/landing" element={<LandingPage/>} />
+               <Route  path="/home" element={<HomePage/>} />   
+               
+               
+               */}
                <Route  path="/login" element={<LoginPage/>} />
                <Route  path="/signup" element={<SignUpPage/>} />
+
+
+
+
+               {/* <Route  path="landingTop" element={<LandingHeader/>} /> */}
+
 
           </Routes>
           

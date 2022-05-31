@@ -1,10 +1,6 @@
 import React, { Component, Fragment } from 'react';
 
-
 import WOW from 'wowjs';
-
-
-
 
 import LandingHeader from '../components/landing/LandingHeader'
 import LandingFeatures from '../components/landing/LandingFeatures'
@@ -18,18 +14,15 @@ import LandingBlog from '../components/landing/LandingBlog.jsx'
 import LandingContact from '../components/landing/LandingContact.jsx'
 import LandingFooter from '../components/landing/LandingFooter.jsx'
 import LandingDownload from '../components/landing/LandingDownload';
-import SignInSide from '../components/landing/LandingLogin';
-import SignUp from '../components/landing/LandingSignUp';
 import FloatingActionButtons from '../components/landing/LandingFloating';
 
-
-
+import {Container,Row,Col,Card} from 'react-bootstrap'
+import LandingNavbar from '../components/landing/LandingNavbar';
 
 
 export class LandingPage extends Component {
 
   //check
-
   componentDidMount(){
     window.scroll(0,0);
 
@@ -40,35 +33,28 @@ export class LandingPage extends Component {
      // mobile: false
  }).init();
 
-
 }
      render() {
           return (
                <Fragment>
-
-               {/* <Preloader/> */}
-              
-              
                
-               <SignInSide/>
-               <SignUp></SignUp>
+                    
+                    
+                    <LandingNavbar/> 
                <LandingHeader/>
                <LandingFeatures/>
                <LandingAbout/>
                <LandingServices/>
-               <LandingPortfolio/>
+               {/* <LandingPortfolio/>
                <LandingPricing/>
                <LandingTeam/>
                <LandingTestimonial/>
-               <LandingBlog/>
-               
-                <LandingDownload/>
-
+               <LandingBlog/> */}
+               <LandingDownload/>
                <LandingContact/>
                <LandingFooter/>
-                <FloatingActionButtons></FloatingActionButtons>
-
-
+               <FloatingActionButtons/>
+      
                </Fragment>
           )
      }

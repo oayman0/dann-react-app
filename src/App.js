@@ -4,6 +4,9 @@ import AppRoute from './route/AppRoute'
 
 
 
+
+
+
 class App extends Component {
   render() {
     return (
@@ -15,8 +18,9 @@ class App extends Component {
           <BrowserRouter>
 
                <AppRoute/>
-
+              
           </BrowserRouter>
+         
 
       </Fragment>
     )

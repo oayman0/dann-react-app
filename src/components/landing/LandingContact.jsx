@@ -14,12 +14,12 @@ import Contact_bg from '../../assets/landingAssets/images/contact_bg.jpg';
               <div className="col-lg-6">
                 <div className="section_title section_title_2 text-center pb-25">
                   <h4 className="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Contact Us</h4>
-                  <p className="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Lorem ipsum dolor sit
-                    amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore.</p>
+                  <p className="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">We are all ears, Send your thoughts, ideas and complaints </p>
                 </div> {/* section title */}
               </div>
             </div> {/* row */}
-            <form id="contact-form" action="assets/contact.php" method="post" className="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+            <div id="contact-form"  className="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+            {/* <form id="contact-form" action="assets/contact.php" method="post" className="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s"> */}
               <div className="row">
                 <div className="col-lg-6">
                   <div className="single_form">
@@ -49,11 +49,11 @@ import Contact_bg from '../../assets/landingAssets/images/contact_bg.jpg';
                 <p className="form-message" />
                 <div className="col-lg-12">
                   <div className="single_form text-center">
-                    <button className="main-btn" type="submit">SUBMIT</button>
+                    <button className="main-btn">SUBMIT</button>
                   </div> {/* single form */}
                 </div>
               </div> {/* row */}
-            </form>
+            </div>
           </div> {/* container */}
         </section>
         {/*====== CONTACT PART ENDS ======*/}

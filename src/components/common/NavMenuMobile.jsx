@@ -15,6 +15,7 @@ import Bars from '../../assets/images/bars.png';
           }
      }
 
+     
 
      MenuBarClickHandler=()=>{
           this.SideNavOpenClose();
