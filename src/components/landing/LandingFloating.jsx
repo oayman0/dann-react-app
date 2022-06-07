@@ -17,7 +17,7 @@ export default function FloatingActionButtons() {
         <Tooltip title="Back to top">
       <Fab href="#" size="small" sx={{
             position: "fixed",
-            bottom: (theme) => theme.spacing(2),
+            bottom: (theme) => theme.spacing(7),
             right: (theme) => theme.spacing(2)
             }}
             color="primary" aria-label="scroll back to top">
@@ -31,7 +31,7 @@ export default function FloatingActionButtons() {
     <Tooltip title="Login">
       <Fab size="large" aria-label="Login" sx={{
             position: "fixed",
-            bottom: (theme) => theme.spacing(2),
+            bottom: (theme) => theme.spacing(7),
             right: (theme) => theme.spacing(10)
             }} variant="extended">
                  <LocationOnIcon sx={{ mr: 1 }} />

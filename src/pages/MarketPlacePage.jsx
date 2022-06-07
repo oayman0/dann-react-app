@@ -9,9 +9,10 @@ import FeaturedProducts from '../components/home/FeaturedProducts'
 import HomeTop from '../components/home/HomeTop'
 import HomeTopMobile from '../components/home/HomeTopMobile'
 import NewArrival from '../components/home/NewArrival'
-
 import SidebarDesktop from '../components/common/SidebarDesktop'
 import {Container,Row,Col,Card} from 'react-bootstrap'
+
+// import SidebarTest from '../components/common/SidebarTest'
 
 export class MarketPlacePage extends Component {
 
@@ -25,6 +26,9 @@ export class MarketPlacePage extends Component {
           return (   
                <Fragment> 
 
+
+        
+
    <Container className="p-0 m-0 overflow-hidden" fluid={true}>
      <Row>
      <div className="Desktop">
@@ -35,8 +39,9 @@ export class MarketPlacePage extends Component {
                     </div>          
      </Row>
               <Row>
-                    <Col lg={2} md={2} sm={2} xs={2}>      
-                      <SidebarDesktop />
+                    <Col lg={2} md={2} sm={2} xs={2}>  
+                    {/* <SidebarTest/>     */}
+                       <SidebarDesktop /> 
                     </Col>
                     <Col lg={10} md={10} sm={10}xs={10}>
 

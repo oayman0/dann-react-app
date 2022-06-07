@@ -19,7 +19,7 @@ import Logo from '../../assets/images/logo1.png';
       
       </Navbar.Brand>
       
-    <Navbar.Brand className="me-5" style={{color:'#041E42'}} as={Link} to="/">Dann Business Park</Navbar.Brand>     
+    <Navbar.Brand className="me-5 dannBrand" style={{color:'#041E42'}} as={Link} to="/">Dann Business Park</Navbar.Brand>     
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
         <Nav className="ms-auto">

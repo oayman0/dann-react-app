@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import {Link} from 'react-router-dom';
 
 import About from '../../assets/landingAssets/images/about.jpg';
 
@@ -22,7 +23,7 @@ class LandingAbout extends Component {
                     <p className="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Dann Business Park, Egypt's first social commerce platform, that combines all the pros of social media networks along with the power of online marketplaces, A powerful website and mobile app, specially designed for local small and micro businesses.</p>
                     <p className="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.6s">We aim to make online local communities for trade and business in each city of Egypt, to boost our economy, and help people grow their businesses.  </p>
                   </div> {/* section title */}
-                  <a href="#0" className="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.7s">Learn More</a>
+                  <Link to="/signup" ><div  className="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.7s">Sign Up</div> </Link>
                 </div> {/* about content */}
               </div>
             </div> {/* row */}
