@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react'
+import AppURL from '../api/AppURL'
 import FooterDesktop from '../components/common/FooterDesktop'
 import FooterMobile from '../components/common/FooterMobile'
 import NavMenuDesktop from '../components/common/NavMenuDesktop'
@@ -12,13 +13,18 @@ import NewArrival from '../components/home/NewArrival'
 
 import SidebarDesktop from '../components/common/SidebarDesktop'
 import {Container,Row,Col,Card} from 'react-bootstrap'
+import axios from 'axios'
 
 export class HomePage extends Component {
 
   //check
 
   componentDidMount(){
-    window.scroll(0,0)
+    window.scroll(0,0);
+    this.GetVisitorDetails();
+}
+GetVisitorDetails =()=>{
+     axios.get(AppURL.VisitorDetails).then().catch()
 }
 
      render() { 
