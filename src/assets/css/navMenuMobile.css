@@ -11,7 +11,7 @@
      padding-top: 40px;
      transition: 0.1s;
      background-color: #ffffff;
-     box-shadow: 0 0 8px 0 rgba(57, 78, 234, 0.1)
+     box-shadow: 0 0 8px 0 rgba(0, 113, 206, 0.1)
  }
  .sideNavClose {
      height: 100%;
@@ -24,7 +24,7 @@
      overflow-x: hidden;
      transition: 0.1s;
      background-color: #161616;
-     box-shadow: 0 0 8px 0 rgba(57, 78, 234, 0.1);
+     box-shadow: 0 0 8px 0 rgba(0, 113, 206, 0.1);
  }
  .ContentOverlayOpen {
      display: block;

@@ -119,7 +119,7 @@ axios.post(AppURL.PostContact,MyFormData).then(function (response) {
     return (
       <Fragment>
           {/*====== CONTACT PART START ======*/}
-        <section id="contact" className="contact_area bg_cover pt-120 pb-130" style={{backgroundImage: `url(${Contact_bg})`}}>
+        <section id="contact" className="contact_area bg_cover pt-90 pb-130" style={{backgroundImage: `url(${Contact_bg})`}}>
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-6">

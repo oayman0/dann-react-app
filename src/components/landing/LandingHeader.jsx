@@ -21,7 +21,8 @@ import {Link} from 'react-router-dom'
                   <div className="hero_content text-center">
                     <h2 className="hero_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Dann Business Park</h2>
                     <p className="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s"> Egypt's first social commerce platform <br className="d-none d-xl-block" />  A High Technology Enabled E-Commerce Platform for Micro and Small Businesses </p>
-                    <a href="#features" className="main-btn wow fadeInUp me-3" data-wow-duration="1.3s" data-wow-delay="0.8s">Explore</a>
+                    {/* <a href="#features" className="main-btn wow fadeInUp me-3" data-wow-duration="1.3s" data-wow-delay="0.8s">Explore</a> */}
+                
 {/* check */}
                     <Link to="/login"><div className="main-btn wow fadeInUp me-3" data-wow-duration="1.3s" data-wow-delay="0.8s">
                    Login

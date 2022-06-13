@@ -66,16 +66,14 @@ setUser = (user) => {
   render() {
     return (
       <Fragment>
-        <NavMenuDesktop user={this.state.user} setUser={this.setUser} /> 
+        {/* <NavMenuDesktop user={this.state.user} setUser={this.setUser} />  */}
 
           <Switch>
 
             {/* 
-                 {/*v5: <Route to='/' component ={HomePage}/>
+                 {/*v5: <Route exact Path='/' component ={HomePage}/>
                  V6: as follows 
-
-                 
-                 <Route exact path='/' component={LandingPage} />
+                 <Route to='/' component={LandingPage} />
                 
                  
                  <Route exact path="/userlogin" component={UserLoginPage} />
@@ -114,8 +112,11 @@ setUser = (user) => {
 
 
 <Route exact path="/" render={(props) => <HomePage {...props} key={Date.now()} /> } />
+<Route exact path="/landing" render={(props) => <LandingPage {...props} key={Date.now()} /> } />
 
  <Route exact path="/login" render={(props) => <UserLoginPage user={this.state.user} setUser={this.setUser}  {...props} key={Date.now()} /> } />
+
+ <Route exact path="/login1" render={(props) => <LoginPage user={this.state.user} setUser={this.setUser}  {...props} key={Date.now()} /> } />
 
   <Route exact path="/register" render={(props) => <RegisterPage user={this.state.user} setUser={this.setUser} {...props} key={Date.now()} /> } />
 
@@ -154,11 +155,12 @@ setUser = (user) => {
 
 
 
-<Route exact path="/register" render={(props) => <RegisterPage user={this.state.user} setUser={this.setUser} {...props} key={Date.now()} /> } />
 
 
 
 
+
+ 
           </Switch>
           
       </Fragment>

@@ -1,6 +1,7 @@
 .btn {
      border: none !important;
      border-radius: 0px !important;
+     
  }
  .btn:focus {
      box-shadow: none;
@@ -10,22 +11,22 @@
     font-weight: 300;
     padding: 5px;
     width: 100%;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto ', sans-serif;
     color: white !important;
-    background: #051b35 !important;
+    background: #0071CE !important;
 }
 
 
  .site-btn{
      font-weight: 300;
      padding: 5px;
-     font-family: 'Roboto Condensed', sans-serif;
+     font-family: 'Roboto ', sans-serif;
      color: white !important;
-     background: #051b35 !important;
+     background: #0071CE !important;
  }
  
  .site-btn:active{
-     background: #051b35 !important;
+     background: #0071CE !important;
  }
  
  

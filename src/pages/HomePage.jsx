@@ -14,6 +14,7 @@ import NewArrival from '../components/home/NewArrival'
 import SidebarDesktop from '../components/common/SidebarDesktop'
 import {Container,Row,Col,Card} from 'react-bootstrap'
 import axios from 'axios'
+import {Redirect} from 'react-router-dom'
 
 export class HomePage extends Component {
 
@@ -28,6 +29,9 @@ GetVisitorDetails =()=>{
 }
 
      render() { 
+          if(!localStorage.getItem('token')){
+               return <Redirect  to="/landing" />
+          }
           return (   
                <Fragment> 
 

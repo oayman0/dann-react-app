@@ -9,7 +9,7 @@ class CollectionLoading extends Component {
                <div className={isLoading}>
 
 <Container className="text-center" fluid={true}>
-          <div className="section-title text-center mb-55"><h2> PRODUCT COLLECTION</h2>
+          <div className="section-title text-center mb-55"><h2> Product Collection</h2>
           <p>Some Of Our Exclusive Collection, You May Like</p>
           </div>
 
@@ -17,7 +17,7 @@ class CollectionLoading extends Component {
 
                <div className="col-lg-3 col-md-3 col-sm-4 col-6 p-1">
                             <a href="" className="card image-box h-100  w-100">
-                               <div class="ph-picture"></div>
+                               <div className="ph-picture"></div>
                                 <div className="ph-item">
                                     <div className="ph-col-12">
                                         <div className="ph-row">
@@ -33,7 +33,7 @@ class CollectionLoading extends Component {
 
                         <div className="col-lg-3 col-md-3 col-sm-4 col-6 p-1">
                             <a href="" className="card image-box h-100  w-100">
-                               <div class="ph-picture"></div>
+                               <div className="ph-picture"></div>
                                 <div className="ph-item">
                                     <div className="ph-col-12">
                                         <div className="ph-row">
@@ -49,7 +49,7 @@ class CollectionLoading extends Component {
 
                         <div className="col-lg-3 col-md-3 col-sm-4 col-6 p-1">
                             <a href="" className="card image-box h-100  w-100">
-                               <div class="ph-picture"></div>
+                               <div className="ph-picture"></div>
                                 <div className="ph-item">
                                     <div className="ph-col-12">
                                         <div className="ph-row">
@@ -65,7 +65,7 @@ class CollectionLoading extends Component {
 
                         <div className="col-lg-3 col-md-3 col-sm-4 col-6 p-1">
                             <a href="" className="card image-box h-100  w-100">
-                               <div class="ph-picture"></div>
+                               <div className="ph-picture"></div>
                                 <div className="ph-item">
                                     <div className="ph-col-12">
                                         <div className="ph-row">
@@ -81,7 +81,7 @@ class CollectionLoading extends Component {
 
                         <div className="col-lg-3 col-md-3 col-sm-4 col-6 p-1">
                             <a href="" className="card image-box h-100  w-100">
-                               <div class="ph-picture"></div>
+                               <div className="ph-picture"></div>
                                 <div className="ph-item">
                                     <div className="ph-col-12">
                                         <div className="ph-row">
@@ -97,7 +97,7 @@ class CollectionLoading extends Component {
 
                         <div className="col-lg-3 col-md-3 col-sm-4 col-6 p-1">
                             <a href="" className="card image-box h-100  w-100">
-                               <div class="ph-picture"></div>
+                               <div className="ph-picture"></div>
                                 <div className="ph-item">
                                     <div className="ph-col-12">
                                         <div className="ph-row">
@@ -112,7 +112,7 @@ class CollectionLoading extends Component {
 
                         <div className="col-lg-3 col-md-3 col-sm-4 col-6 p-1">
                             <a href="" className="card image-box h-100  w-100">
-                               <div class="ph-picture"></div>
+                               <div className="ph-picture"></div>
                                 <div className="ph-item">
                                     <div className="ph-col-12">
                                         <div className="ph-row">
@@ -127,7 +127,7 @@ class CollectionLoading extends Component {
 
                         <div className="col-lg-3 col-md-3 col-sm-4 col-6 p-1">
                             <a href="" className="card image-box h-100  w-100">
-                               <div class="ph-picture"></div>
+                               <div className="ph-picture"></div>
                                 <div className="ph-item">
                                     <div className="ph-col-12">
                                         <div className="ph-row">

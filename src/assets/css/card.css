@@ -3,12 +3,12 @@
      text-decoration: none;
      border: none !important;
      border-radius: 0% !important;
-     box-shadow: 0 0 4px 0 rgba(57, 78, 234, 0.1)
+     box-shadow: 0 0 4px 0 rgba(0, 113, 206, 0.1)
  }
  .card:hover {
      border-radius: 0% !important;
      text-decoration: none;
-     box-shadow: 0 0 12px 0 rgba(57, 78, 234, 0.1)
+     box-shadow: 0 0 12px 0 rgba(0, 113, 206, 0.1)
  }
  .bar-img{
      height: 20px;
@@ -41,20 +41,22 @@
 
    .section-title h2 {
      font-size: 30px;
-     font-weight: 600;
+     color:#041e42;
+     font-weight: 400;
      position: relative;
      display: inline-block;
      margin: 0;
  }
 
  .section-title h2:before {
+    
      position: absolute;
      top: 17px;
      left: -100px;
      width: 80px;
      height: 2px;
      content: "";
-     background-color: #000;
+     background-color: #041e42;
  }
 
  .section-title h2:after {
@@ -64,5 +66,5 @@
      width: 80px;
      height: 2px;
      content: "";
-     background-color: #000;
+     background-color: #041e42;
  }

@@ -15,7 +15,7 @@ class Profile extends Component {
           }
 
           if(!localStorage.getItem('token')){
-               return <Redirect  to="/login" />
+               return <Redirect  to="/" />
           }
 
 

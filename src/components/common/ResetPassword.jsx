@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { Container,Row,Col, Form,Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import AppURL from '../../api/AppURL';
-import Forget from '../../assets/images/forget.jpg'
+import Forget from '../../assets/images/login.jpg'
 import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -61,7 +61,7 @@ export class ResetPassword extends Component {
                     <Row className="text-center">
              <Col className="d-flex justify-content-center" md={6} lg={6} sm={12} xs={12}>
     <Form className="onboardForm"  onSubmit={this.formSubmit} id="fromreset" >
-                    <h4 className="section-title-login"> RESET PASSWORD </h4>
+                    <h4 className="section-title-login"> Reset Password </h4>
                     
      <input className="form-control m-2" type="text" placeholder="Enter Your Pin Code" onChange={(e)=>{this.setState({token:e.target.value})}} />
 

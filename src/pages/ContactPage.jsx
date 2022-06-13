@@ -1,9 +1,10 @@
 import React, { Component, Fragment } from 'react'
-import Contact from '../components/common/Contact'
+// import Contact from '../components/common/Contact'
 import FooterDesktop from '../components/common/FooterDesktop'
 import FooterMobile from '../components/common/FooterMobile'
 import NavMenuDesktop from '../components/common/NavMenuDesktop'
 import NavMenuMobile from '../components/common/NavMenuMobile'
+import LandingContact from '../components/landing/LandingContact'
 
 
 class ContactPage extends Component {
@@ -20,8 +21,10 @@ class ContactPage extends Component {
                </div>
                <div className="Mobile">
                <NavMenuMobile />  
-               </div>                       
-               <Contact /> 
+               </div>       
+               <LandingContact/>                
+               
+
                <div className="Desktop">
                <FooterDesktop/>
                </div>
