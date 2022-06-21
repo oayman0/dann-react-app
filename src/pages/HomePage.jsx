@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
+import AppURL from '../api/AppURL'
 import FooterDesktop from '../components/common/FooterDesktop'
-import FooterMobile from '../components/common/FooterMobile'
+
 import NavMenuDesktop from '../components/common/NavMenuDesktop'
 import NavMenuMobile from '../components/common/NavMenuMobile'
 import Categories from '../components/home/Categories'
@@ -12,16 +13,29 @@ import NewArrival from '../components/home/NewArrival'
 
 import SidebarDesktop from '../components/common/SidebarDesktop'
 import {Container,Row,Col,Card} from 'react-bootstrap'
+import axios from 'axios'
+import {Redirect} from 'react-router-dom'
+import AppBar from '../components/common/AppBar'
+import AppBarTop from '../components/common/AppBarTop'
+import FooterSocial from '../components/common/FooterSocial'
 
 export class HomePage extends Component {
+    
 
   //check
 
   componentDidMount(){
-    window.scroll(0,0)
+    window.scroll(0,0);
+//     this.GetVisitorDetails();
 }
+// GetVisitorDetails =()=>{
+//      axios.get(AppURL.VisitorDetails).then().catch()
+// }
 
      render() { 
+          if(!localStorage.getItem('token')){
+               return <Redirect  to="/landing" />
+          }
           return (   
                <Fragment> 
 
@@ -30,7 +44,12 @@ export class HomePage extends Component {
      <div className="Desktop">
                <NavMenuDesktop />
                     </div>
+                    {/* <AppBarTop/> */}
+
                     <div className="Mobile">
+
+                    <AppBar/>
+
                     <NavMenuMobile />  
                     </div>          
      </Row>
@@ -38,31 +57,27 @@ export class HomePage extends Component {
                     <Col lg={2} md={2} sm={2} xs={2}>      
                       <SidebarDesktop />
                     </Col>
-                    <Col lg={10} md={10} sm={10}xs={10}>
+                    <Col lg={10} md={10} sm={12}xs={12}>
 
 
-
-                    <div className="Desktop">
-               <HomeTop/>
-                    </div>
-                    <div className="Mobile">
-                    <HomeTopMobile />
-                    </div>                       
+{/* Insert Content Here */}
                     
+               <HomeTop/>
+
                     <FeaturedProducts />
                     <NewArrival />
                     <Categories />
-                    <Collection />
-                    
-                    <div className="Desktop">
-                    <FooterDesktop/>
-                    </div>
-
-                    <div className="Mobile">
-                    <FooterMobile/>
-                    </div>
+                    <Collection />                    
+                
+                    <FooterDesktop/>                    
               
-
+                    <div className=" Desktop">
+                    <FooterSocial/>
+                    </div>
+                    <div className=" Mobile pb-5">
+                    <FooterSocial/>
+                    </div>
+{/* End Of Content Here */}
 
 
               

@@ -1,41 +1,48 @@
  /* The sidebar menu */
- .sidenav {
+ .sidebarnav {
+
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 16.667%; /* Set the width of the sidebar */
+    width: 225px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #0071CE; 
+    background-color: #dcecf6; 
     overflow-x: hidden; /* Disable horizontal scroll */
     margin-right: 0px;
     padding-top:7%;
+    border-right: 1px solid #e4e4e4; 
+    box-shadow: 3px;
 
 
   }
   
   /* The navigation menu links */
-  .sidenav a {
-    padding: 10px 10px 10px 10px ;
+  .sidebarnav a {
+    padding-left:  20px ;
     text-decoration: none;
-    font-size: 18px;
-    color: #ffffff;
+    font-size: 20px;
+    /* color: #041e42; */
+    color: #0f1419b7;
     display: block;
+    margin-bottom: 10px;
 
         text-align: left;
   }
-  .sidenav h4 {
+  .sidebarnav h4 {
+    font-size: 18px;
+    color:#0f1419;
       display: inline;
       padding-left: 15px;
       padding-right: 10px;
   }
   
   /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #ffc22e;
-   
-    background-color: #0168bd;
-   
+  .sidebarnav a:hover {
+    /* color: #ffc22e; */
+    color: #0f1419;
+    background-color: #0071ce44;
+   /* font-size: 110%; */
     
   }
 
@@ -47,31 +54,33 @@
   }
 
   .sidebarDown{
-   
-   margin-top: 75%;
+   margin-top: 50%; 
 }
   .sidebarDown h4{
    
     font-size: 12pt;
 }
+.profileicon{
+  /* font-size: 25pt; */
+}
 
   
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 10%; font-size: 1pt;  }
-   .sidenav a h4{display: none; }
-   .sidenav a {font-size: 16pt;text-align: center;}
-  } 
+  /* @media screen and (max-height: 450px) {
+    .sidebarnav {padding-top: 10%; font-size: 1pt;  }
+   .sidebarnav a h4{display: none; }
+   .sidebarnav a {font-size: 16pt;text-align: center;}
+  }  */
 
     /* On smaller screens, where width is less than 800px, change the style of the sidebar (less padding and a smaller font size) */
-    @media screen and (max-width: 800px) {
-        .sidenav {padding-top: 15%;}
-        .sidenav a h4{display: none;}
-        .sidenav a {font-size: 16pt;
+    /* @media screen and (max-width: 800px) {
+        .sidebarnav {padding-top: 15%;}
+        .sidebarnav a h4{display: none;}
+        .sidebarnav a {font-size: 16pt;
             text-align: center;}
             .sidebarDown{margin-top: 75%;}
                 .badge{
 font-size: 50%;
-                }             }
+                }             } */
 
       

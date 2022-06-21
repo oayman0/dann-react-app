@@ -1,37 +1,58 @@
 import React, { Component, Fragment } from 'react'
 import Cart from '../components/Cart/Cart'
 import FooterDesktop from '../components/common/FooterDesktop'
-import FooterMobile from '../components/common/FooterMobile'
+
 import NavMenuDesktop from '../components/common/NavMenuDesktop'
 import NavMenuMobile from '../components/common/NavMenuMobile'
+import AppBar from '../components/common/AppBar'
+import FooterSocial from '../components/common/FooterSocial'
+import {Container,Row,Col,Card} from 'react-bootstrap'
+import SidebarDesktop from '../components/common/SidebarDesktop'
+
 
 class CartPage extends Component {
 
      componentDidMount(){
           window.scroll(0,0)
-     }
+     } 
 
      render() {
+
+          const User = this.props.user;
+
           return (
               <Fragment> 
-               <div className="Desktop">
-                <NavMenuDesktop /> 
-               </div>
+<Container className="p-0 m-0 overflow-hidden" fluid={true}>
+     <Row>
+     <div className="Desktop">
+               <NavMenuDesktop /></div>
+                    <div className="Mobile">
+                    <AppBar/>
+                    <NavMenuMobile />  
+                    </div>          
+     </Row>
+              <Row>
+                    <Col lg={2} md={2} sm={2} xs={2}>      
+                         <SidebarDesktop />  </Col>
+                    <Col lg={10} md={10} sm={12}xs={12}>
+{/* Insert Content Here */}
 
-               <div className="Mobile">
-               <NavMenuMobile />  
-               </div>                       
+<Cart user={User} /> 
 
-               <Cart /> 
 
-               <div className="Desktop">
-               <FooterDesktop/>
-               </div>
+{/* End Of Content Here */}
+                    <FooterDesktop/>                    
+                    <div className=" Desktop">
+                    <FooterSocial/></div>
+                    <div className=" Mobile pb-5">
+                    <FooterSocial/></div>              
+                    </Col> 
+                </Row>
+            </Container>
 
-               <div className="Mobile">
-               <FooterMobile/>
-               </div>
 
+
+            
           </Fragment>
           )
      }

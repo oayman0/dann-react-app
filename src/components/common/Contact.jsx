@@ -1,55 +1,36 @@
-import React, { Component, Fragment } from 'react'
-import { Container,Row,Col, Form,Button } from 'react-bootstrap'
+// import React, { Component, Fragment } from 'react'
+// import { Container,Row,Col, Form,Button } from 'react-bootstrap'
+// import LandingContact from '../landing/LandingContact'
 
+// export class Contact extends Component {
+//      render() {
+//           return (
+//                <Fragment>
+//                <Container>
+//                <Row className="p-0">
+//                <Col className="shadow-sm bg-white mt-0" md={12} lg={12} sm={12} xs={12}>
+//                     <Row className="text-center">
+//                          <Row className="d-flex justify-content-center">
+//                  <LandingContact/>
+               
+//                                    </Row>
+//                     <Row className="p-5  m-0">
+//                          <br/><br/><br/><br/>
+//                     <p className="pb-5">
+//                     <b>Dann Business Park </b><br/>
+//                       Faculty of Computers and Information Sciences,
+//                       Mansoura University<br/>Email: DannBusinessPark@gmail.com
+//                     </p>
+//                    <iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=%D9%A1%D8%B4%D8%A7%D8%B1%D8%B9%D8%8C%20El%20Gomhouria%20St,%20Dakahlia%20Governorate%2035516+(Dann%20Business%20Park)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="550" height="450" styles="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                   
+//                                    </Row>
+//                               </Row>
+//                </Col>
+//           </Row>
+//           </Container>
+//           </Fragment>
+//           )
+//      }
+// }
 
-export class Contact extends Component {
-     render() {
-          return (
-               <Fragment>
-               <Container>
-                    <Row className="p-2">
-            <Col className="shadow-sm bg-white mt-2" md={12} lg={12} sm={12} xs={12}>
-
-                    <Row className="text-center">
-             <Col className="d-flex justify-content-center" md={6} lg={6} sm={12} xs={12}>
-     <Form className="onboardForm">
-          <h4 className="section-title-login">CONTACT WITH US </h4>
-          <h6 className="section-sub-title">Please Contact With Us </h6>
-          <input className="form-control m-2" type="text" placeholder="Enter Mobile Number" />
-
-          <input className="form-control m-2" type="email" placeholder="Enter Email" />
-
-          <input className="form-control m-2" type="text" placeholder="Enter Your Message" />
-          <Button className="btn btn-block m-2 site-btn-login"> Send </Button>
-
-     </Form>
-
-
-                         </Col>
-
-            <Col className="p-0 Desktop m-0" md={6} lg={6} sm={6} xs={6}>
-                 <br></br><br></br>
-           <p className="section-title-contact">
-           1635 Franklin Street Montgomery, Near Sherwood Mall. AL 36104
-Email: Support@easylearningbd.com
-           </p>
-
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162771.1102477064!2d-74.10054944459704!3d40.70681480276415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1627241390779!5m2!1sen!2sbd" width="550" height="450" styles="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-                         </Col>
-                    </Row>
-
-
-
-
-
-
-                         </Col>
-                    </Row>
-               </Container>
-          </Fragment>
-          )
-     }
-}
-
-export default Contact
+// export default Contact
