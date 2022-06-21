@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import AppURL from '../api/AppURL'
 import FooterDesktop from '../components/common/FooterDesktop'
-import FooterMobile from '../components/common/FooterMobile'
+
 import NavMenuDesktop from '../components/common/NavMenuDesktop'
 import NavMenuMobile from '../components/common/NavMenuMobile'
 import Categories from '../components/home/Categories'
@@ -16,12 +16,12 @@ export class HomePage extends Component {
 
      componentDidMount(){
           window.scroll(0,0);
-          this.GetVisitorDetails();
+          // this.GetVisitorDetails();
      }
 
-     GetVisitorDetails =()=>{
-          axios.get(AppURL.VisitorDetails).then().catch()
-     }
+     // GetVisitorDetails =()=>{
+     //      axios.get(AppURL.VisitorDetails).then().catch()
+     // }
 
 
      render() { 
@@ -47,7 +47,7 @@ export class HomePage extends Component {
                     </div>
 
                     <div className="Mobile">
-                    <FooterMobile/>
+                           {/*  */}
                     </div>
                     
                </Fragment>

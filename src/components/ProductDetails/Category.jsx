@@ -18,7 +18,7 @@ class Category extends Component {
                <img className="center w-75" src={ProductList.image} />   
                <Card.Body> 
                <p className="product-name-on-card">{ProductList.title}</p>
-               <p className="product-price-on-card">Price : ${ProductList.price}</p>
+               <p className="product-price-on-card">Price:  EGP {ProductList.price}</p>
                     
                </Card.Body>
                </Card>  
@@ -34,7 +34,7 @@ class Category extends Component {
                <img className="center w-75" src={ProductList.image} />   
                <Card.Body> 
                <p className="product-name-on-card">{ProductList.title}</p>
-               <p className="product-price-on-card">Price : <strike className="text-secondary">${ProductList.price}</strike> ${ProductList.special_price}</p>
+               <p className="product-price-on-card">Price: <strike className="text-secondary"> EGP {ProductList.price}</strike>  EGP {ProductList.special_price}</p>
                     
                </Card.Body>
                </Card>   

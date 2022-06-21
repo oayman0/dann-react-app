@@ -113,7 +113,7 @@ export class Purchase extends Component {
 
 
     <div className={this.state.mainDiv}> 
-      <h4 className="section-title-login">Purchase Page </h4>
+      <h4 className="section-title-login">Order Now!</h4>
       <p className="section-title-contact">
       { parse(this.state.purchase) }
       </p>

@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
+import AppURL from '../api/AppURL'
 import FooterDesktop from '../components/common/FooterDesktop'
-import FooterMobile from '../components/common/FooterMobile'
+
 import NavMenuDesktop from '../components/common/NavMenuDesktop'
 import NavMenuMobile from '../components/common/NavMenuMobile'
 import Categories from '../components/home/Categories'
@@ -9,65 +10,75 @@ import FeaturedProducts from '../components/home/FeaturedProducts'
 import HomeTop from '../components/home/HomeTop'
 import HomeTopMobile from '../components/home/HomeTopMobile'
 import NewArrival from '../components/home/NewArrival'
+
 import SidebarDesktop from '../components/common/SidebarDesktop'
 import {Container,Row,Col,Card} from 'react-bootstrap'
-
-// import SidebarTest from '../components/common/SidebarTest'
+import axios from 'axios'
+import {Redirect} from 'react-router-dom'
+import AppBar from '../components/common/AppBar'
+// import AppBarTop from '../components/common/AppBarTop'
+import FooterSocial from '../components/common/FooterSocial'
 
 export class MarketPlacePage extends Component {
+    
 
   //check
 
   componentDidMount(){
-    window.scroll(0,0)
+    window.scroll(0,0);
+//     this.GetVisitorDetails();
 }
+// GetVisitorDetails =()=>{
+//      axios.get(AppURL.VisitorDetails).then().catch()
+// }
 
      render() { 
+          if(!localStorage.getItem('token')){
+               return <Redirect  to="/landing" />
+          }
           return (   
                <Fragment> 
-
-
-        
 
    <Container className="p-0 m-0 overflow-hidden" fluid={true}>
      <Row>
      <div className="Desktop">
                <NavMenuDesktop />
                     </div>
+                    {/* <AppBarTop/> */}
+
                     <div className="Mobile">
+
+                    <AppBar/>
+
                     <NavMenuMobile />  
                     </div>          
      </Row>
               <Row>
-                    <Col lg={2} md={2} sm={2} xs={2}>  
-                    {/* <SidebarTest/>     */}
-                       <SidebarDesktop /> 
+                    <Col lg={2} md={2} sm={2} xs={2}>      
+                      <SidebarDesktop />
                     </Col>
-                    <Col lg={10} md={10} sm={10}xs={10}>
+                    <Col lg={10} md={10} sm={12}xs={12}>
 
 
-
-                    <div className="Desktop">
+{/* Insert Content Here */}
+                   
                <HomeTop/>
-                    </div>
-                    <div className="Mobile">
-                    <HomeTopMobile />
-                    </div>                       
-                    
+
                     <FeaturedProducts />
                     <NewArrival />
                     <Categories />
                     <Collection />
+{/* End Of Content Here */}
                     
-                    <div className="Desktop">
-                    <FooterDesktop/>
-                    </div>
-
-                    <div className="Mobile">
-                    <FooterMobile/>
-                    </div>
+                  
+                    <FooterDesktop/>                    
               
-
+                    <div className=" Desktop">
+                    <FooterSocial/>
+                    </div>
+                    <div className=" Mobile pb-5">
+                    <FooterSocial/>
+                    </div>
 
 
               
@@ -81,3 +92,4 @@ export class MarketPlacePage extends Component {
 }
 
 export default MarketPlacePage
+

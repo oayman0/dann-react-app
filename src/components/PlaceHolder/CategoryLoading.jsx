@@ -9,7 +9,7 @@ class CategoryLoading extends Component {
 
 <Container className="text-center" fluid={true}>
           <div className="section-title text-center mb-55"><h2> Categories</h2>
-          <p>Some Of Our Exclusive Collection, You May Like</p>
+          <p>Some of our exclusive collection, you may like</p>
           </div>
                
 <div className="row">

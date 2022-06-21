@@ -1,6 +1,7 @@
 .nav-logo{
+    margin-top: 5px;
      width: 180px;
-     height: 40px;
+     height: auto;
  }
  .cart-btn:hover{
      padding: 5px 15px 5px 15px;
@@ -27,5 +28,13 @@
  }
 
  .TopSectionDown{
-      margin-bottom: 80px;
+      margin-bottom: 56px;
  }
+ .navMenuDesktopButton{
+    padding: 3px 6px 3px 6px;
+color: #0071CE;
+background-color: #FFFFFF;
+margin-top: 15px;
+border: 2px solid #0071CE;
+}
+

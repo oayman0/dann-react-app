@@ -39,7 +39,7 @@ class Collection extends Component {
                <img className="center w-75" src={CollectionList.image} />   
                <Card.Body> 
                <p className="product-name-on-card">{CollectionList.title}</p>
-               <p className="product-price-on-card">Price : ${CollectionList.price}</p>
+               <p className="product-price-on-card">  EGP {CollectionList.price}</p>
                     
                </Card.Body>
                </Card>          
@@ -53,7 +53,7 @@ class Collection extends Component {
                <img className="center w-75" src={CollectionList.image} />   
                <Card.Body> 
                <p className="product-name-on-card">{CollectionList.title}</p>
-               <p className="product-price-on-card">Price : <strike className="text-secondary">${CollectionList.price}</strike> ${CollectionList.special_price}</p>
+               <p className="product-price-on-card"> <strike className="text-secondary"> EGP {CollectionList.price}</strike>  EGP {CollectionList.special_price}</p>
                     
                </Card.Body>
                </Card>          
@@ -74,7 +74,7 @@ class Collection extends Component {
 
                    <Container className="text-center" fluid={true}>
           <div className="section-title text-center mb-55"><h2> Product Collection</h2>
-          <p>Some Of Our Exclusive Collection, You May Like</p>
+          <p>Some of our exclusive collection, you may like</p>
           </div>
 
      <Row> 

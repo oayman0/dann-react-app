@@ -1,9 +1,11 @@
 import React, { Component, Fragment } from 'react'
-import FooterDesktop from '../components/common/FooterDesktop'
-import FooterMobile from '../components/common/FooterMobile'
+// import FooterDesktop from '../components/common/FooterDesktop'
+
+import FooterSocial from '../components/common/FooterSocial'
 import NavMenuDesktop from '../components/common/NavMenuDesktop'
 import NavMenuMobile from '../components/common/NavMenuMobile'
 import UserLogin from '../components/common/UserLogin'
+import LandingNavbarLogin from '../components/landing/LandingNavbarLogin'
 
 
 class UserLoginPage extends Component {
@@ -18,23 +20,22 @@ class UserLoginPage extends Component {
           
           return (
                <Fragment> 
-               <div className="Desktop">
+               {/* <div className="Desktop">
                 <NavMenuDesktop /> 
                </div>
 
                <div className="Mobile">
                <NavMenuMobile />  
-               </div>                       
-
+               </div>                        */}
+               <LandingNavbarLogin/>
                <UserLogin setUser={setUser} user ={user} /> 
                
                <div className="Desktop">
-               <FooterDesktop/>
+               {/* <FooterDesktop/> */}
+               <FooterSocial/>
                </div>
 
-               <div className="Mobile">
-               <FooterMobile/>
-               </div>
+               
                
           </Fragment>
           )

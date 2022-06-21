@@ -42,7 +42,7 @@ class FeaturedProducts extends Component {
     <img className="center" src={FeaturedList.image} />   
     <Card.Body> 
    <p className="product-name-on-card">{FeaturedList.title}</p>
-    <p className="product-price-on-card">Price : ${FeaturedList.price}</p>
+    <p className="product-price-on-card">  EGP {FeaturedList.price}</p>
                     
     </Card.Body> 
      </Card>
@@ -52,13 +52,13 @@ class FeaturedProducts extends Component {
           }
           else{
 
-               return  <Col className="p-1" key={1} xl={2} lg={2} md={2} sm={4} xs={6}>
+               return  <Col className="p-1" key={1} xl={3} lg={3} md={3} sm={4} xs={6}>
                  <Link className="text-link" to={"/productdetails/"+FeaturedList.id} >
     <Card className="image-box card">
     <img className="center" src={FeaturedList.image} />   
     <Card.Body> 
    <p className="product-name-on-card">{FeaturedList.title}</p>
-    <p className="product-price-on-card">Price : <strike className="text-secondary">${FeaturedList.price}</strike> ${FeaturedList.special_price}</p>
+    <p className="product-price-on-card"> <strike className="text-secondary"> EGP {FeaturedList.price}</strike>  EGP {FeaturedList.special_price}</p>
                     
     </Card.Body>
      </Card>
@@ -79,7 +79,7 @@ class FeaturedProducts extends Component {
           <div className={this.state.mainDiv}>
                    <Container className="text-center" fluid={true}>
           <div className="section-title text-center mb-55"><h2>Featured Products</h2>
-          <p>Some Of Our Exclusive Collection, You May Like</p>
+          <p>Some of our exclusive collection, you may like</p>
           </div>
 
 

@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import FooterDesktop from '../components/common/FooterDesktop'
-import FooterMobile from '../components/common/FooterMobile'
+
 import ForgetPassword from '../components/common/ForgetPassword'
 import NavMenuDesktop from '../components/common/NavMenuDesktop'
 import NavMenuMobile from '../components/common/NavMenuMobile'
@@ -28,9 +28,7 @@ class ForgetPasswordPage extends Component {
                <FooterDesktop/>
                </div>
 
-               <div className="Mobile">
-               <FooterMobile/>
-               </div>
+               
                
           </Fragment>
           )

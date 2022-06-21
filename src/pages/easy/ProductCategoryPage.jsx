@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Fragment } from 'react'
 import AppURL from '../api/AppURL'
 import FooterDesktop from '../components/common/FooterDesktop'
-import FooterMobile from '../components/common/FooterMobile'
+
 import NavMenuDesktop from '../components/common/NavMenuDesktop'
 import NavMenuMobile from '../components/common/NavMenuMobile'
 import Category from '../components/ProductDetails/Category'
@@ -48,9 +48,7 @@ import axios from 'axios'
                <FooterDesktop/>
                </div>
 
-               <div className="Mobile">
-               <FooterMobile/>
-               </div>
+               
                
           </Fragment>
           )

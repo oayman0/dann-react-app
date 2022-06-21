@@ -209,7 +209,7 @@ class Cart extends Component {
           <h5 className="product-name">{ProductList.product_name}</h5>
           <h6> Quantity = {ProductList.quantity} </h6>
           <p>{ProductList.size} | {ProductList.color}</p>
-          <h6>Price = {ProductList.unit_price} x {ProductList.quantity} = {ProductList.total_price}$</h6>
+          <h6>Price = {ProductList.unit_price} x {ProductList.quantity} = {ProductList.total_price} EGP </h6>
           </Col>
 
           <Col md={3} lg={3} sm={12} xs={12}>
@@ -236,7 +236,7 @@ class Cart extends Component {
 
                    <Container fluid={true}>   
 
-    <div className="section-title text-center mb-55"><h2>Product Cart List</h2>   
+    <div className="section-title text-center mb-55"><h2>Shopping Cart List</h2>   
           </div>
 
 
@@ -253,7 +253,7 @@ class Cart extends Component {
                     <div className="container-fluid ">
                          <div className="row">
 <div className="col-md-12 p-1  col-lg-12 col-sm-12 col-12">
-     <h5 className="Product-Name text-danger">Total Due: {totalPriceSum}  $</h5>
+     <h5 className="Product-Name text-danger">Total Due: {totalPriceSum}   EGP </h5>
 </div>
 </div>
 <div className="row">
@@ -261,12 +261,32 @@ class Cart extends Component {
      <label className="form-label">Choose City</label>
      <select onChange={this.cityOnChange} className="form-control">
      <option value="">Choose</option>
-     <option value="Dhaka">Assam</option>
-     <option value="Dhaka">Bihar </option>
-     <option value="Dhaka">Goa </option>
-     <option value="Dhaka">Gujarat </option>
-     <option value="Dhaka">Himachal Pradesh </option>
-     <option value="Dhaka">Punjab  </option>
+     <option value="Mansoura">Mansoura</option>
+     <option value="Mit Ghamr">Mit Ghamr  </option>
+     <option value="Alexandria">Alexandria </option>
+     <option value="Al Mahalla">Al Mahalla  </option>
+     <option value="Aswan">Aswan  </option>
+     <option value="Asyut">Asyut  </option>
+     <option value="Badr">Badr  </option>
+     <option value="Banha">Banha  </option>
+     <option value="Beni Suef">Beni Suef  </option>
+     <option value="Cairo">Cairo </option>
+     <option value="Dahab">Dahab </option>
+     <option value="Damanhur">Damanhur  </option>
+     <option value="Damietta">Damietta  </option>
+     <option value="Giza">Giza </option>
+     <option value="Hurghada">Hurghada  </option>
+     <option value="Ismailia">Ismailia  </option>
+     <option value="Luxor">Luxor  </option>
+     <option value="Minya">Minya  </option>
+     <option value="October">October  </option>
+     <option value="Port Said">Port Said </option>
+     <option value="Qalyub">Qalyub  </option>
+     <option value="Suez">Suez  </option>
+     <option value="Tanta">Tanta  </option>
+     <option value="Zagazig">Zagazig  </option>
+     <option value="Zayed">Zayed  </option>
+     <option value="Zefta">Zefta  </option>
      </select>
 </div>
 <div className="col-md-12 p-1 col-lg-12 col-sm-12 col-12">
@@ -274,7 +294,10 @@ class Cart extends Component {
      <select onChange={this.paymentMethodOnChange}  className="form-control">
      <option value="">Choose</option>
      <option value="Cash On Delivery">Cash On Delivery</option>
-     <option value="Cash On Delivery">Stripe</option>
+     <option value="Credit Card">Credit Card</option>
+     <option value="Fawry">Fawry</option>
+     <option value="Vodafone Cash">Vodafone Cash</option>
+     <option value="Kashier">Kashier</option>
      </select>
 </div>
 <div className="col-md-12 p-1 col-lg-12 col-sm-12 col-12">

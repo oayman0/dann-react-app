@@ -7,7 +7,7 @@ import Logo from '../../assets/images/logo1.png';
   render() {
     return (
       <Fragment>
-<Navbar bg="light" expand="lg" fixed="top" className="m-0 p-0 shadow-sm " style={{opacity:1}}>
+<Navbar bg="light" expand="lg" sticky="top" className="m-0 p-0 shadow-sm " style={{opacity:1}}>
   <Container>
   <Navbar.Brand as={Link} to="/">
       <img

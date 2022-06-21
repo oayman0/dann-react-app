@@ -1,9 +1,7 @@
 import React, { Component, Fragment } from 'react'
-import FooterDesktop from '../components/common/FooterDesktop'
-import FooterMobile from '../components/common/FooterMobile'
-import NavMenuDesktop from '../components/common/NavMenuDesktop'
-import NavMenuMobile from '../components/common/NavMenuMobile'
+import FooterSocial from '../components/common/FooterSocial'
 import Register from '../components/common/Register'
+import LandingNavbarLogin from '../components/landing/LandingNavbarLogin'
 
 
 
@@ -20,23 +18,18 @@ export class RegisterPage extends Component {
 
           return (
                <Fragment> 
-               <div className="Desktop">
-                <NavMenuDesktop /> 
-               </div>
 
-               <div className="Mobile">
-               <NavMenuMobile />  
-               </div>                       
+<LandingNavbarLogin/>
+         
 
                <Register setUser={setUser} user ={user}  />  
                
                <div className="Desktop">
-               <FooterDesktop/>
+               <FooterSocial/>
+               
                </div>
 
-               <div className="Mobile">
-               <FooterMobile/>
-               </div>
+               
                
           </Fragment>
           )

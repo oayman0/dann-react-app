@@ -5,6 +5,8 @@ import AppURL from '../../api/AppURL';
 import Login from '../../assets/landingAssets/images/about.jpg'
 import axios from 'axios'
 import Logo from '../../assets/images/logo.png'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 class Register extends Component {
@@ -40,7 +42,8 @@ class Register extends Component {
                this.props.setUser(response.data.customer);
                
           }).catch(error=>{
-
+               this.setState({message:error.response.data.message});
+               toast.error(this.state.message);
           }); 
 
      }
@@ -61,13 +64,13 @@ class Register extends Component {
           return (
                <Fragment>
                <Container> 
-                    <Row className="p-0">
+                    <Row className="p-0 mb-5">
             <Col className="shadow-sm bg-white mt-0" md={12} lg={12} sm={12} xs={12}>
      
                     <Row className="text-center">
 
-                    <Col className="p-0 Desktop m-0" md={6} lg={6} sm={6} xs={6}>
-                              <img className="onboardBanner" src={Login} />
+                    <Col className="p-0 Desktop m-0 reg" md={6} lg={6} sm={6} xs={6}>
+                              <img className="onboardBanner " src={Login}/>
                          </Col>
 
 
@@ -102,6 +105,8 @@ class Register extends Component {
                          </Col>
                     </Row>
                </Container>
+               <ToastContainer />
+
           </Fragment>
           )
      }

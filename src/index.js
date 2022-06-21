@@ -16,6 +16,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   //check
   // <React.StrictMode>
+  
     <App />
   // </React.StrictMode>
 );

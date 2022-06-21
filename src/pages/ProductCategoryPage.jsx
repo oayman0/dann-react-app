@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 import { Fragment } from 'react'
 import AppURL from '../api/AppURL'
 import FooterDesktop from '../components/common/FooterDesktop'
-import FooterMobile from '../components/common/FooterMobile'
+import AppBar from '../components/common/AppBar'
+import FooterSocial from '../components/common/FooterSocial'
+import SidebarDesktop from '../components/common/SidebarDesktop'
+import {Container,Row,Col,Card} from 'react-bootstrap'
 import NavMenuDesktop from '../components/common/NavMenuDesktop'
 import NavMenuMobile from '../components/common/NavMenuMobile'
 import Category from '../components/ProductDetails/Category'
@@ -34,23 +37,40 @@ import axios from 'axios'
      render() {
           return (
               <Fragment> 
-               <div className="Desktop">
-                <NavMenuDesktop /> 
-               </div>
 
-               <div className="Mobile">
-               <NavMenuMobile />  
-               </div>                       
 
-               <Category Category={this.state.Category} ProductData={this.state.ProductData} /> 
-               
-               <div className="Desktop">
-               <FooterDesktop/>
-               </div>
+<Container className="p-0 m-0 overflow-hidden" fluid={true}>
+     <Row>
+     <div className="Desktop">
+               <NavMenuDesktop /></div>
+                    <div className="Mobile">
+                    <AppBar/>
+                    <NavMenuMobile />  
+                    </div>          
+     </Row>
+              <Row>
+                    <Col lg={2} md={2} sm={2} xs={2}>      
+                         <SidebarDesktop />  </Col>
+                    <Col lg={10} md={10} sm={12}xs={12}>
+{/* Insert Content Here */}
 
-               <div className="Mobile">
-               <FooterMobile/>
-               </div>
+
+<Category Category={this.state.Category} ProductData={this.state.ProductData} /> 
+{/* End Of Content Here */}
+                    <FooterDesktop/>                    
+                    <div className=" Desktop">
+                    <FooterSocial/></div>
+                    <div className=" Mobile pb-5">
+                    <FooterSocial/></div>              
+                    </Col> 
+                </Row>
+            </Container>
+
+
+
+
+
+
                
           </Fragment>
           )

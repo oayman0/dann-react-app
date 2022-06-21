@@ -31,8 +31,8 @@
     cursor: pointer;
  }
  .detailimage{    
-    max-width: 60%;
-    height: 499px;
-    margin: 0px;
-    margin-left: 142px;    
+    width: 416px;
+    max-height: 392px;
+    /* margin: 0px; */
+    /* margin-left:20px; */
  }

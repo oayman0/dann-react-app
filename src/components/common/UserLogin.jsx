@@ -1,11 +1,12 @@
 import React, { Component, Fragment } from 'react'
 import { Container,Row,Col, Form,Button } from 'react-bootstrap'
-import Login from '../../assets/images/login.png'
 import { Link, Redirect  } from 'react-router-dom'
 import AppURL from '../../api/AppURL';
 import axios from 'axios'
 import Logo from '../../assets/images/logo.png'
 import Login1 from '../../assets/images/login.jpg'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -27,17 +28,28 @@ class UserLogin extends Component {
           const data={
                email:this.state.email,
                password:this.state.password
-          }
+          };
 
-          axios.post(AppURL.UserLogin,data).then(response =>{ 
+          // axios.post(AppURL.UserLogin,data).then(response =>{ 
+          axios.post(AppURL.CustomerLogin,data).then(response =>{ 
             
                localStorage.setItem('token',response.data.token);
-               this.setState({loggedIn:true})
-               this.props.setUser(response.data.user);
+               this.setState({loggedIn:true});
+               // check - omar
+               // this.props.setUser(response.data.user);
+               this.props.setUser(response.data.customer);
+               // console.log(response);
+               // console.log(data);
+               // console.log(AppURL.CustomerLogin);
                
-          }).catch(error=>{
+          }).catch(
+               error=>{
+                    this.setState({message:error.response.data.message});
+                    toast.error(this.state.message);
 
-          }); 
+          }
+          
+          ); 
 
      }
 
@@ -81,7 +93,7 @@ class UserLogin extends Component {
      <hr />
      <p> <Link to="/forget"><b> Frogot password? </b> </Link> </p>
 
-     <p> <b> Don't have an account ? </b><Link to="/register"><b> Sign Up </b> </Link> </p>
+     <p> <b> Don't have an account ? </b><Link to="/signup"><b> Sign Up </b> </Link> </p>
                
           </Form>
                     </Col>
@@ -92,6 +104,7 @@ class UserLogin extends Component {
                     </Col>
                </Row>
           </Container>
+               <ToastContainer />
      </Fragment>
           )
      }

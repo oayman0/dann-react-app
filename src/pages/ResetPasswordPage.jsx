@@ -1,9 +1,7 @@
 import React, { Component, Fragment } from 'react'
-import FooterDesktop from '../components/common/FooterDesktop'
-import FooterMobile from '../components/common/FooterMobile'
-import NavMenuDesktop from '../components/common/NavMenuDesktop'
-import NavMenuMobile from '../components/common/NavMenuMobile'
+import FooterSocial from '../components/common/FooterSocial'
 import ResetPassword from '../components/common/ResetPassword'
+import LandingNavbarLogin from '../components/landing/LandingNavbarLogin'
 
 
 class ResetPasswordPage extends Component {
@@ -15,23 +13,14 @@ class ResetPasswordPage extends Component {
      render() {
           return (
               <Fragment> 
-               <div className="Desktop">
-                <NavMenuDesktop /> 
-               </div>
-
-               <div className="Mobile">
-               <NavMenuMobile />  
-               </div>                       
-
+                   <LandingNavbarLogin/>
                <ResetPassword />  
                
                <div className="Desktop">
-               <FooterDesktop/>
+               <FooterSocial/>
                </div>
 
-               <div className="Mobile">
-               <FooterMobile/>
-               </div>
+               
                
           </Fragment>
           )

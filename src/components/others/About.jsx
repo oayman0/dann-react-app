@@ -95,7 +95,7 @@ import { Link } from 'react-router-dom';
 
 
       <div className={this.state.mainDiv}>
-      <h4 className="section-title-login">About Us Page </h4>
+      <h4 className="section-title-login">About our platform </h4>
       <p className="section-title-contact">
 
       { parse(this.state.about) }       

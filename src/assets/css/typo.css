@@ -33,10 +33,11 @@
      font-weight: 400;
  }
  .product-price-on-card {
-     color: #E43023;
+     color: #0e0e0e;
      font-size: 14px;
      font-family: 'Roboto ', sans-serif;
-     font-weight: 400;
+     font-weight: 600;
+    font: bold;
  }
  .category-name{
      color: #000000;

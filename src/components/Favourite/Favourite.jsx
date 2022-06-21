@@ -81,7 +81,7 @@ class Favourite extends Component {
                <Fragment>
                    <Container className="text-center" fluid={true}>
           <div className="section-title text-center mb-55"><h2> MY FAVOURITE ITEMS</h2>
-          <p>Some Of Our Exclusive Collection, You May Like</p>
+          <p>Some of our exclusive collection, you may like</p>
           </div>
 
      <Row> 

@@ -34,13 +34,13 @@ class SuggestedProduct extends Component {
                const MyView = MyList.map((ProductList,i)=>{
 
                     if(ProductList.special_price=="na"){
-                         return  <Col className="p-1" key={1} xl={2} lg={2} md={2} sm={4} xs={6}>
+                         return  <Col className="p-1" key={1} xl={3} lg={3} md={3} sm={4} xs={6}>
                          <Link className="text-link" to={"/productdetails/"+ProductList.id} >
               <Card className="image-box card">
               <img className="center" src={ProductList.image} />   
               <Card.Body> 
              <p className="product-name-on-card">{ProductList.title}</p>
-              <p className="product-price-on-card">Price : ${ProductList.price}</p>
+              <p className="product-price-on-card">Price: {ProductList.price}  EGP </p>
                               
               </Card.Body> 
                </Card>
@@ -50,13 +50,13 @@ class SuggestedProduct extends Component {
                     }
                     else{
           
-                         return  <Col className="p-1" key={1} xl={2} lg={2} md={2} sm={4} xs={6}>
+                         return  <Col className="p-1" key={1} xl={3} lg={3} md={3} sm={4} xs={6}>
                            <Link className="text-link" to={"/productdetails/"+ProductList.id} >
               <Card className="image-box card">
               <img className="center" src={ProductList.image} />   
               <Card.Body> 
              <p className="product-name-on-card">{ProductList.title}</p>
-              <p className="product-price-on-card">Price : <strike className="text-secondary">${ProductList.price}</strike> ${ProductList.special_price}</p>
+              <p className="product-price-on-card">Price: <strike className="text-secondary"> EGP {ProductList.price}</strike>  EGP {ProductList.special_price}</p>
                               
               </Card.Body>
                </Card>
@@ -71,8 +71,8 @@ class SuggestedProduct extends Component {
                return (
                     <Fragment>
                         <Container className="text-center" fluid={true}>
-               <div className="section-title text-center mb-55"><h2>YOU MAY ALSO LIKE </h2>
-               <p>Some Of Our Exclusive Collection, You May Like</p>
+               <div className="section-title text-center mb-55"><h2>You may also like </h2>
+               <p>People who viewed this product also like</p>
                </div>
      
       
@@ -94,12 +94,12 @@ class SuggestedProduct extends Component {
                return (
                     <Fragment>
                         <Container className="text-center" fluid={true}>
-               <div className="section-title text-center mb-55"><h2>YOU MAY ALSO LIKE </h2>
-               <p>Some Of Our Exclusive Collection, You May Like</p>
+               <div className="section-title text-center mb-55"><h2>You may also like </h2>
+               <p>People who viewed this product also like</p>
                </div>
      
       
-          <p>There have no similar product </p>
+          <p>At the moment, no similar products to this one</p>
      
      
                         </Container>

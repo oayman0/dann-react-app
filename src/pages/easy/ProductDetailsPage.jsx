@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import AppURL from '../api/AppURL'
 import FooterDesktop from '../components/common/FooterDesktop'
-import FooterMobile from '../components/common/FooterMobile'
+
 import NavMenuDesktop from '../components/common/NavMenuDesktop'
 import NavMenuMobile from '../components/common/NavMenuMobile'
 import ProductDetails from '../components/ProductDetails/ProductDetails'
@@ -58,7 +58,7 @@ class ProductDetailsPage extends Component {
                     </div>
      
                     <div className="Mobile">
-                    <FooterMobile/>
+                           {/*  */}
                     </div>
                     
                </Fragment>
@@ -86,7 +86,7 @@ class ProductDetailsPage extends Component {
                     </div>
      
                     <div className="Mobile">
-                    <FooterMobile/>
+                           {/*  */}
                     </div>
                     
                </Fragment>

@@ -5,6 +5,7 @@
 @import "landing.css";
 
 /* home */
+@import "common.css";
 @import "bigSlider.css";
 @import "button.css";
 @import "card.css";
@@ -17,7 +18,7 @@
 @import "responsive.css";
 @import "megaMenuAll.css";
 @import "onboard.css";
-@import "common.css";
+
 @import "productDetails.css";
 @import "cartList.css";
 @import "sidebar.css";

@@ -1,24 +1,26 @@
 import React, { Component, Fragment } from 'react'
-import Favourite from '../components/Favourite/Favourite'
 import FooterDesktop from '../components/common/FooterDesktop'
 import NavMenuDesktop from '../components/common/NavMenuDesktop'
 import NavMenuMobile from '../components/common/NavMenuMobile'
+import Payments from '../components/common/Payments'
 import AppBar from '../components/common/AppBar'
 import FooterSocial from '../components/common/FooterSocial'
 import SidebarDesktop from '../components/common/SidebarDesktop'
-import {Container,Row,Col,Card} from 'react-bootstrap'
+import {Container,Row,Col} from 'react-bootstrap'
 
-class FavouritePage extends Component {
+class PaymentsPage extends Component {
+
      componentDidMount(){
           window.scroll(0,0)
      }
- 
-     render() {
-          const User = this.props.user;
-          return (
-              <Fragment> 
 
-<Container className="p-0 m-0 overflow-hidden" fluid={true}>
+     render() {
+          return (
+               <Fragment>
+
+
+
+                    <Container className="p-0 m-0 overflow-hidden" fluid={true}>
      <Row>
      <div className="Desktop">
                <NavMenuDesktop /></div>
@@ -33,7 +35,7 @@ class FavouritePage extends Component {
                     <Col lg={10} md={10} sm={12}xs={12}>
 {/* Insert Content Here */}
 
-<Favourite user={User} /> 
+<Payments/> 
 
 
 {/* End Of Content Here */}
@@ -46,11 +48,9 @@ class FavouritePage extends Component {
                 </Row>
             </Container>
 
-
-              
           </Fragment>
           )
      }
 }
 
-export default FavouritePage
+export default PaymentsPage

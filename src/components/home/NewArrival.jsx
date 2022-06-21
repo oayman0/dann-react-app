@@ -52,7 +52,7 @@ class NewArrival extends Component {
                <img className="center" src={NewList.image} />   
                <Card.Body> 
                <p className="product-name-on-card">{NewList.title}</p>
-               <p className="product-price-on-card">Price : ${NewList.price}</p>
+               <p className="product-price-on-card">  EGP {NewList.price}</p>
                     
                </Card.Body>
                </Card>
@@ -68,7 +68,7 @@ class NewArrival extends Component {
                <img className="center" src={NewList.image} />   
                <Card.Body> 
                <p className="product-name-on-card">{NewList.title}</p>
-               <p className="product-price-on-card">Price : <strike className="text-secondary">${NewList.price}</strike> ${NewList.special_price}</p>
+               <p className="product-price-on-card"> <strike className="text-secondary"> EGP {NewList.price}</strike>  EGP {NewList.special_price}</p>
                     
                </Card.Body>
                </Card>
@@ -126,14 +126,14 @@ class NewArrival extends Component {
 
                <div className={this.state.mainDiv}>
           <Container className="text-center" fluid={true}>
-          <div className="section-title text-center mb-55"><h2>NEW ARRIVAL &nbsp;
+          <div className="section-title text-center mb-55"><h2>New Arrival &nbsp;
 
 <a className="btn btn-sm ml-2 site-btn" onClick={this.previous} ><i className="fa fa-angle-left"></i></a>
 &nbsp;
 <a className="btn btn-sm ml-2 site-btn" onClick={this.next} ><i className="fa fa-angle-right"></i></a>
 
           </h2>
-          <p>Some Of Our Exclusive Collection, You May Like</p>
+          <p>Some of our exclusive collection, you may like</p>
           </div>
 
                <Row>

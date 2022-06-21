@@ -35,6 +35,7 @@ import SignUpPage from '../pages/SignUpPage';
 import AboutPage from '../pages/AboutPage';
 import ProductCategoryPage from '../pages/ProductCategoryPage';
 import ProductSubCategoryPage from '../pages/ProductSubCategoryPage';
+import PaymentsPage from '../pages/PaymentsPage';
 
 
 
@@ -112,13 +113,13 @@ setUser = (user) => {
 
 
 <Route exact path="/" render={(props) => <HomePage {...props} key={Date.now()} /> } />
-<Route exact path="/landing" render={(props) => <LandingPage {...props} key={Date.now()} /> } />
+<Route exact path="/landing" render={(props) => <LandingPage {...props} key={Date.now()}/>}/>
 
  <Route exact path="/login" render={(props) => <UserLoginPage user={this.state.user} setUser={this.setUser}  {...props} key={Date.now()} /> } />
 
  <Route exact path="/login1" render={(props) => <LoginPage user={this.state.user} setUser={this.setUser}  {...props} key={Date.now()} /> } />
 
-  <Route exact path="/register" render={(props) => <RegisterPage user={this.state.user} setUser={this.setUser} {...props} key={Date.now()} /> } />
+  <Route exact path="/signup" render={(props) => <RegisterPage user={this.state.user} setUser={this.setUser} {...props} key={Date.now()} /> } />
 
   <Route exact path="/forget" render={(props) => <ForgetPasswordPage {...props} key={Date.now()} /> } />
  
@@ -151,14 +152,21 @@ setUser = (user) => {
  <Route exact path="/productbysearch/:searchkey" render={(props) => <SearchPage {...props} key={Date.now()} /> } /> 
 
  <Route exact path="/orderlist" render={(props) => <OrderListPage user={this.state.user} {...props} key={Date.now()} /> } /> 
-                  
 
 
+ <Route exact path="/marketplace" render={(props) => <MarketPlacePage {...props} key={Date.now()}/>}/>
+
+ <Route exact path="/explore" render={(props) => <ExplorePage user={this.state.user} {...props} key={Date.now()} /> } /> 
+ <Route exact path="/people" render={(props) => <PeoplePage user={this.state.user} {...props} key={Date.now()} /> } /> 
+ {/* <Route exact path="/messages" render={(props) => <MessagesPage user={this.state.user} {...props} key={Date.now()} /> } /> */}
+ <Route   to="/messages" component={MessagesPage} />
+ <Route   path="/payments" component={PaymentsPage} />
+
+ {/* <Route exact path="/payments" render={(props) => <PaymentsPage user={this.state.user} {...props} key={Date.now()} /> } /> */}
 
 
-
-
-
+              
+    
 
  
           </Switch>

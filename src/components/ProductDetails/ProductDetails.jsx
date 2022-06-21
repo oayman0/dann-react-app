@@ -8,6 +8,8 @@ import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 import InnerImageZoom from 'react-inner-image-zoom';
 import SuggestedProduct from './SuggestedProduct'
 import ReviewList from './ReviewList'
+import parse from 'html-react-parser';
+
 
 // import toast from 'cogo-toast';
 import { ToastContainer, toast } from 'react-toastify';
@@ -233,13 +235,13 @@ class ProductDetails extends Component {
      PriceOption(price,special_price){
           if(special_price=="na"){
                return (
-            <p className="product-price-on-card"> Price : {price}$ </p>
+            <p className="product-price-on-card"> Price: {price} EGP  </p>
                )
           }else{
 
                return (
                     <p className="product-price-on-card">
-                      Price : <strike className="text-secondary">{price}$ </strike> {special_price}$ 
+                      Price: <strike className="text-secondary">{price} EGP  </strike> {special_price} EGP  
                           </p>
                )
 
@@ -248,6 +250,7 @@ class ProductDetails extends Component {
 
 
      render() {
+          const parse = require('html-react-parser');
 
           let ProductAllData = this.props.data;
           let title = ProductAllData['productList'][0]['title'];
@@ -355,22 +358,22 @@ class ProductDetails extends Component {
           
 
                
-          <InnerImageZoom className="detailimage" zoomScale={1.8} zoomType={"hover"} src={this.state.previewImg} zoomSrc={this.state.previewImg} />
+          <InnerImageZoom className="detailimage rounded mx-auto d-block" zoomScale={1.8} zoomType={"hover"} src={this.state.previewImg} zoomSrc={this.state.previewImg} />
          
 
           <Container  className="my-3">
                <Row>
                     <Col className="p-0 m-0"  md={3} lg={3} sm={3} xs={3}>
-                         <img onClick={this.imgOnClick} className="w-100 smallimage product-sm-img" src={image_one} />
+                         <img onClick={this.imgOnClick} className="w-100 smallimage product-sm-img rounded" src={image_one} />
                     </Col>
                     <Col className="p-0 m-0" md={3} lg={3} sm={3} xs={3}>
-                         <img onClick={this.imgOnClick} className="w-100 smallimage product-sm-img" src={image_two} />
+                         <img onClick={this.imgOnClick} className="w-100 smallimage product-sm-img rounded" src={image_two} />
                     </Col>
                     <Col className="p-0 m-0" md={3} lg={3} sm={3} xs={3}>
-                         <img onClick={this.imgOnClick} className="w-100 smallimage product-sm-img" src={image_three} />
+                         <img onClick={this.imgOnClick} className="w-100 smallimage product-sm-img rounded" src={image_three} />
                     </Col>
                     <Col className="p-0 m-0" md={3} lg={3} sm={3} xs={3}>
-                         <img onClick={this.imgOnClick} className="w-100 smallimage product-sm-img" src={image_four} />
+                         <img onClick={this.imgOnClick} className="w-100 smallimage product-sm-img rounded" src={image_four} />
                     </Col>
                </Row>
           </Container>
@@ -385,7 +388,7 @@ class ProductDetails extends Component {
 
           <h6 className="mt-2">Category : <b>{category}</b>  </h6>          
 
-          <h6 className="mt-2">SubCategory : <b>{subcategory}</b></h6>
+          <h6 className="mt-2">Type <b>{subcategory}</b></h6>
 
           <h6 className="mt-2">Brand : <b>{brand}</b></h6>
 
@@ -442,8 +445,8 @@ class ProductDetails extends Component {
 
      <Row>
           <Col className="" md={6} lg={6} sm={12} xs={12}>
-          <h6 className="mt-2">DETAILS</h6>
-          <p> {long_description} </p>
+          <h6 className="mt-2">Product Details</h6>
+          <p> {parse(long_description)} </p>
           </Col>
 
           <Col className="" md={6} lg={6} sm={12} xs={12}>

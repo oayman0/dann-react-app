@@ -4,7 +4,7 @@ class AppURL {
     static BaseURL = "http://127.0.0.1:8000/api"
 
 
-    static VisitorDetails = this.BaseURL+"/getvisitor"
+//     static VisitorDetails = this.BaseURL+"/getvisitor"
     static PostContact = this.BaseURL+"/postcontact"
     static AllSiteInfo = this.BaseURL+"/allsiteinfo"
     static AllCategoryDetails = this.BaseURL+"/allcategory"
@@ -33,7 +33,8 @@ class AppURL {
          return this.BaseURL+"/search/"+searchkey;
     }
 
-    static UserLogin = this.BaseURL+"/login"
+//     static UserLogin = this.BaseURL+"/login"
+    static CustomerLogin = this.BaseURL+"/customer/login"
     static UserData = this.BaseURL+"/user"
 //     static UserRegister = this.BaseURL+"/register"
     static CustomerRegister = this.BaseURL+"/customer/register"

@@ -95,7 +95,7 @@ class Privacy extends Component {
 
 
 <div className={this.state.mainDiv}>
-      <h4 className="section-title-login">Privacy Page</h4>
+      <h4 className="section-title-login">Privacy Policy</h4>
       <p className="section-title-contact">
 
       { parse(this.state.privacy) }       

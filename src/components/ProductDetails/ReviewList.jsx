@@ -84,7 +84,7 @@ class ReviewList extends Component {
           return (
                <div>
 
-<h6 className="mt-2">REVIEWS</h6>
+<h6 className="mt-2">Customer Reviews</h6>
 
           {MyView} 
                     
@@ -96,9 +96,9 @@ class ReviewList extends Component {
                return (
                     <div>
      
-     <h6 className="mt-2">REVIEWS</h6>
+     <h6 className="mt-2">Customer Reviews</h6>
      
-              <p>There have no review Yet </p>
+              <p>This item has no review yet </p>
                          
                     </div>
                )

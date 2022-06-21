@@ -20,6 +20,7 @@ import FloatingActionButtons from '../components/landing/LandingFloating';
 import LandingNavbar from '../components/landing/LandingNavbar';
 import AppURL from '../api/AppURL';
 import axios from 'axios';
+// import AppBar from '../components/common/AppBar';
 
 
 export class LandingPage extends Component {
@@ -30,7 +31,7 @@ export class LandingPage extends Component {
           window.scroll(0,0);
 
           //consume visitor api
-          this.GetVisitorDetails();
+          // this.GetVisitorDetails();
 
           //check
           new WOW.WOW({
@@ -40,17 +41,18 @@ export class LandingPage extends Component {
           }).init();
          
   }
-     GetVisitorDetails =()=>{
-          axios.get(AppURL.VisitorDetails).then().catch()
-     }
+     // GetVisitorDetails =()=>{
+     //      axios.get(AppURL.VisitorDetails).then().catch()
+     // }
 
      render() {
-          console.log("err");
+         
           if(localStorage.getItem('token')){
                return <Redirect  to="/" />
           }
           return (
                <Fragment>
+                  
                     <LandingNavbar/> 
                <LandingHeader/>
                <LandingFeatures/>

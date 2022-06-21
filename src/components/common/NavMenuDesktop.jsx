@@ -1,7 +1,9 @@
 import React, { Component, Fragment } from 'react'
 import {Navbar,Container, Row, Col,Button} from 'react-bootstrap';
-import Logo from '../../assets/images/easyshop.png';
-import Bars from '../../assets/images/bars.png';
+// import Logo from '../../assets/images/easyshop.png';
+import Logo from '../../assets/images/logo1.png';
+
+// import Bars from '../../assets/images/bars.png';
 import {Link, Redirect } from "react-router-dom";
 import MegaMenuAll from '../home/MegaMenuAll';
 import axios from 'axios';
@@ -34,9 +36,9 @@ import AppURL from '../../api/AppURL';
 
 
 
-     logout = () => {
-          localStorage.clear();
-     }
+     // logout = () => {
+     //      localStorage.clear();
+     // }
 
      SearchOnChange(event){
           let Searchkey = event.target.value;
@@ -85,14 +87,15 @@ import AppURL from '../../api/AppURL';
           if(localStorage.getItem('token')){
                buttons = (
                     <div>
- <Link to="/favourite" className="btn"><i className="fa h4 fa-heart"></i><sup><span className="badge text-white bg-danger">3</span></sup>                  
+ <Link to="/favourite" className="btn"><i className="far h4 fa-heart"></i><sup><span className="badge text-white bg-danger">3</span></sup>                  
                    </Link> 
 
-                   <Link to="/notification" className="btn"><i className="fa h4 fa-bell"></i><sup><span className="badge text-white bg-danger">5</span></sup>                  
+                   <Link to="/notification" className="btn"><i className="far h4 fa-bell"></i><sup><span className="badge text-white bg-danger">5</span></sup>                  
                    </Link>
+                
                    
-                   <Link to="/profile" className="h4 btn">PROFILE</Link>
-                   <Link to="/" onClick={this.logout} className="h4 btn">LOGOUT</Link>
+                   {/* <Link to="/profile" className="h4 btn">PROFILE</Link> */}
+                   {/* <Link to="/" onClick={this.logout} className="h4 btn">Logout </Link> */}
                    
        <Link to="/cart" className="cart-btn"><i className="fa fa-shopping-cart"></i> {this.state.cartCount} Items </Link>
                     </div> 
@@ -108,7 +111,7 @@ import AppURL from '../../api/AppURL';
                    </Link>
                    
                    <Link to="/login" className="h4 btn">LOGIN</Link>
-                   <Link to="/register" className="h4 btn">REGISTER</Link>
+                   <Link to="/signup" className="h4 btn">REGISTER</Link>
                    
        <Link to="/cart" className="cart-btn"><i className="fa fa-shopping-cart"></i> 0 Items </Link>
                     </div> 
@@ -123,17 +126,29 @@ import AppURL from '../../api/AppURL';
 <div className="TopSectionDown">
 <Navbar fixed={"top"} className="navbar" bg="light">
 
-    <Container fluid={"true"} className="fixed-top shadow-sm p-2 mb-0 bg-white">
+    <Container fluid={"true"} className="fixed-top shadow-sm p-0 mb-0 bg-white">
          <Row>
-              <Col lg={4} md={4} sm={12} xs={12}>
+              <Col lg={6} md={6} sm={12} xs={12} flex>
 
               
-              <img onClick={this.MenuBarClickHandler} className="bar-img" src={Bars} />
+              {/* <img onClick={this.MenuBarClickHandler} className="bar-img" src={Bars} /> */}
+              <Button onClick={this.MenuBarClickHandler} className="btn navMenuDesktopButton ms-3 me-5"><i className="fa fa-bars"></i> All  </Button> 
 
-              <Link to="/"> <img className="nav-logo" src={Logo} /> </Link>
+              {/* <Link to="/"> <img className="nav-logo" src={Logo} /> </Link> */}
+              
+              <Navbar.Brand as={Link} to="/" >
+      <img
+        src={Logo}
+        width="80%"
+        height="80%"
+        className="d-inline-block align-top"
+        alt="DANN"/>
+      </Navbar.Brand>
+     
+
               </Col>
-
-<Col className="p-1 mt-1" lg={4} md={4} sm={12} xs={12}>
+             
+<Col className="p-1 mt-1" lg={3} md={3} sm={12} xs={12}>
      <div className="input-group w-100">
      <input onChange={this.SearchOnChange} type="text" className="form-control" />
 
@@ -142,10 +157,11 @@ import AppURL from '../../api/AppURL';
      </div>
 </Col>
 
-              <Col className="p-1 mt-1" lg={4} md={4} sm={12} xs={12}>
+              <Col className="p-1 mt-1" lg={3} md={3} sm={12} xs={12}>
               
+             <div className="float-end me-5">
              {buttons}
-
+             </div>
               </Col>
 
          </Row> 
