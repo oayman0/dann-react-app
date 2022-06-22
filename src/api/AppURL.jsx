@@ -2,6 +2,7 @@ class AppURL {
 
     // Add Server URL Here
     static BaseURL = "http://127.0.0.1:8000/api"
+//     static BaseURL = "https://dann-backend.store/api"
 
 
 //     static VisitorDetails = this.BaseURL+"/getvisitor"

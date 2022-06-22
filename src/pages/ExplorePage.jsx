@@ -6,6 +6,7 @@ import SidebarDesktop from '../components/common/SidebarDesktop'
 import {Container,Row,Col,Card} from 'react-bootstrap'
 import AppBar from '../components/common/AppBar'
 import FooterSocial from '../components/common/FooterSocial'
+import RightBar from '../components/explore/RightBar'
 
 export class ExplorePage extends Component {
 
@@ -31,10 +32,8 @@ export class ExplorePage extends Component {
               <Row>
                     <Col lg={2} md={2} sm={2} xs={2}>      
                          <SidebarDesktop />  </Col>
-                    <Col lg={10} md={10} sm={12}xs={12}>
+                    <Col lg={6} md={6} sm={12}xs={12}>
 {/* Insert Content Here */}
-
-
 
 {/* End Of Content Here */}
                     <FooterDesktop/>                    
@@ -43,6 +42,10 @@ export class ExplorePage extends Component {
                     <div className=" Mobile pb-5">
                     <FooterSocial/></div>              
                     </Col> 
+                    <Col lg={4} md={4} sm={4} xs={4}>      
+                        
+                         <RightBar/>
+                           </Col>
                 </Row>
             </Container>
 
