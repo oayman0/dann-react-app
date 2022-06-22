@@ -9,6 +9,7 @@ import SearchPage from '../pages/SearchPage';
 import axios from 'axios' 
 import NavMenuDesktop from '../components/common/NavMenuDesktop';
 import OrderListPage from '../pages/OrderListPage';
+import MyProfilePage from '../pages/MyProfilePage';
 
 
 
@@ -161,6 +162,7 @@ setUser = (user) => {
  {/* <Route exact path="/messages" render={(props) => <MessagesPage user={this.state.user} {...props} key={Date.now()} /> } /> */}
  <Route   to="/messages" component={MessagesPage} />
  <Route   path="/payments" component={PaymentsPage} />
+ <Route  exact path="/myprofile" component={MyProfilePage} />
 
  {/* <Route exact path="/payments" render={(props) => <PaymentsPage user={this.state.user} {...props} key={Date.now()} /> } /> */}
 
