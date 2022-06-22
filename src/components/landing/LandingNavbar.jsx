@@ -22,17 +22,15 @@ import Logo from '../../assets/images/logo1.png';
     <Navbar.Brand className="me-5 dannBrand" style={{color:'#041E42'}}as={Link} to="/">Dann Business Park</Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
-      <Nav className="me-auto" navbarScroll>
+      {/* <Nav className="me-auto" navbarScroll>
         <Nav.Link as={Link} to="/">Home</Nav.Link>
         <Nav.Link as={Link} to="/">About</Nav.Link>
         <Nav.Link as={Link} to="/">Services</Nav.Link>
-        {/* check */}
-        {/* <Nav.Link as={Link} to="/">Blog</Nav.Link> */}
         <Nav.Link as={Link} to="/">Download</Nav.Link>
         <Nav.Link as={Link} to="/">Contact Us</Nav.Link>
      
     
-      </Nav>
+      </Nav> */}
 
       {/* <Navbar.Text> */}
         <Nav className="ms-auto">

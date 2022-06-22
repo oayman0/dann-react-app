@@ -48,6 +48,7 @@
  .rightbar img {
 width: 48px;
 height: 48px; 
+border:1px solid #d1d1d1;
 }
   
 
@@ -78,11 +79,36 @@ height: 48px;
     background-color: #0071ce;
     margin-top: 10px;
     padding-left: 15px;
-    
+
 
 }
 .rightbarbutton:hover {
     background-color: #0071cebb;
     color: #0f1419;
-    border: 2px solid #0071ce;
+    border: 2px solid #000000;
 }
+
+.rightbar_social ul li {
+    display: inline-block;
+  }
+
+.rightbar_social ul li + li {
+  
+    margin-left: 30px;
+  }
+  
+  .rightbar_social ul li a {
+    font-size: 26px;
+    color: rgba(37, 37, 37, 0.8);
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .rightbar_social ul li a:hover {
+    color: rgb(22, 22, 22);
+  }
+  
+  @media (max-width: 767px) {
+    .rightbar_social ul li a {
+      font-size: 20px;
+    }
+  }
