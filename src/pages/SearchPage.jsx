@@ -10,6 +10,7 @@ import AppBar from '../components/common/AppBar'
 import FooterSocial from '../components/common/FooterSocial'
 import SidebarDesktop from '../components/common/SidebarDesktop'
 import {Container,Row,Col,Card} from 'react-bootstrap'
+import {Redirect} from 'react-router-dom'
 
 class SearchPage extends Component {
 
@@ -35,6 +36,10 @@ class SearchPage extends Component {
      } 
 
      render() {
+          if(!localStorage.getItem('token')){
+               return <Redirect  to="/landing" />
+          }
+          
           return (
                <Fragment> 
 

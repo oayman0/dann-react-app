@@ -10,7 +10,7 @@
      font-size: 16px;
      padding-top: 40px;
      transition: 0.1s;
-     background-color: #ffffff;
+     background-color: #ffffffd8;
      box-shadow: 0 0 8px 0 rgba(0, 113, 206, 0.1)
  }
  .sideNavClose {
@@ -46,3 +46,12 @@ color:#0071ce;
 background-color: #ffffff;
 
  }
+ .nav-logoMobile{
+width: 80px;
+height: auto;
+margin-top: 0px;
+
+ }
+ .navbaricons{
+color: #585e62
+}

@@ -7,13 +7,17 @@ import AppBar from '../components/common/AppBar'
 import FooterSocial from '../components/common/FooterSocial'
 import SidebarDesktop from '../components/common/SidebarDesktop'
 import {Container,Row,Col,Card} from 'react-bootstrap'
-
+import {Redirect} from 'react-router-dom'
 
 class PrivacyPage extends Component {
      componentDidMount(){
           window.scroll(0,0)
      }
      render() {
+          
+ if(!localStorage.getItem('token')){
+     return <Redirect  to="/landing" />}
+   
           return (
                <Fragment> 
                     

@@ -7,7 +7,7 @@ import {Container,Row,Col,Card} from 'react-bootstrap'
 import AppBar from '../components/common/AppBar'
 import FooterSocial from '../components/common/FooterSocial'
 import RightBar from '../components/explore/RightBar'
-
+import {Redirect} from 'react-router-dom'
 export class ExplorePage extends Component {
 
   //check
@@ -17,6 +17,9 @@ export class ExplorePage extends Component {
 }
 
      render() { 
+          if(!localStorage.getItem('token')){
+               return <Redirect  to="/landing" />
+          }
           return (   
                <Fragment> 
 
@@ -32,16 +35,14 @@ export class ExplorePage extends Component {
               <Row>
                     <Col lg={2} md={2} sm={2} xs={2}>      
                          <SidebarDesktop />  </Col>
-                    <Col lg={6} md={6} sm={12}xs={12}>
+
+                    <Col lg={6} md={6} sm={12}xs={12} className="min-vh-100">
 {/* Insert Content Here */}
 
-{/* End Of Content Here */}
-                    <FooterDesktop/>                    
-                    <div className=" Desktop">
-                    <FooterSocial/></div>
-                    <div className=" Mobile pb-5">
-                    <FooterSocial/></div>              
+
+{/* End Of Content Here */}      
                     </Col> 
+
                     <Col lg={4} md={4} sm={4} xs={4}>      
                         
                          <RightBar/>
