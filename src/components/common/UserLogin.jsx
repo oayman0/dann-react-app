@@ -7,6 +7,7 @@ import Logo from '../../assets/images/logo.png'
 import Login1 from '../../assets/images/login.jpg'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import validation from '../../validation/validation';
 
 
 
@@ -17,27 +18,46 @@ class UserLogin extends Component {
           this.state={
                email:'',
                password:'',
-               message:'',
+               message:'Incorrect email or password',
                loggedIn:false
           }
      } 
 
      // Login Form Submit Method 
      formSubmit = (e) => {
-          e.preventDefault();
           const data={
                email:this.state.email,
                password:this.state.password
           };
+          let sendBtn = document.getElementById('sendBtn');
 
-          // axios.post(AppURL.UserLogin,data).then(response =>{ 
-          axios.post(AppURL.CustomerLogin,data).then(response =>{ 
+
+
+          if((data.email.length<15)){
+       
+               toast.info("Incorrect email or password");
+          }
+          else if(data.password.length<8){
+            toast.info("Incorrect email or password");
+          }
+          else if(!(validation.EmailRegx).test(data.email)){
+            toast.info("Incorrect email or password");
+          }
+          else if(!(validation.PasswordRegx).test(data.password)){
+            toast.info("Incorrect email or password");
+          }
+          else{
+            sendBtn.innerHTML="Signing...";       
+     
+            axios.post(AppURL.CustomerLogin,data).then(response =>{ 
             
                localStorage.setItem('token',response.data.token);
                this.setState({loggedIn:true});
                // check - omar
                // this.props.setUser(response.data.user);
                this.props.setUser(response.data.customer);
+
+               sendBtn.innerHTML="Sign in"
                // console.log(response);
                // console.log(data);
                // console.log(AppURL.CustomerLogin);
@@ -45,11 +65,18 @@ class UserLogin extends Component {
           }).catch(
                error=>{
                     this.setState({message:error.response.data.message});
-                    toast.error(this.state.message);
+                    toast.info(this.state.message);
+                    sendBtn.innerHTML="Sign in";
+
 
           }
           
           ); 
+
+          }
+        
+          e.preventDefault();
+        
 
      }
 
@@ -83,11 +110,11 @@ class UserLogin extends Component {
           <img src={Logo} alt="logo" className=""/>
                <h4 className="section-title-login mt-3"> Sign in to Dann </h4>
                
-               <input className="form-control my-3 py-3" type="email" placeholder="Email Address*" onChange={(e)=>{this.setState({email:e.target.value})}} />
+               <input className="form-control my-3 py-3" type="email" placeholder="Email Address*" onChange={(e)=>{this.setState({email:e.target.value})}} required/>
 
-               <input className="form-control my-3 py-3" type="password" placeholder="Password*"  onChange={(e)=>{this.setState({password:e.target.value})}} />
+               <input className="form-control my-3 py-3" type="password" placeholder="Password*"  onChange={(e)=>{this.setState({password:e.target.value})}} required />
 
-               <Button type="submit" className="btn btn-block mt-3 site-btn-login"> Sign in </Button>
+               <Button id="sendBtn" type="submit" className="btn btn-block mt-3 site-btn-login"> Sign in </Button>
 
                <br></br> <br></br>
      <hr />

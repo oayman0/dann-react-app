@@ -9,6 +9,8 @@ import FooterSocial from '../components/common/FooterSocial'
 import SidebarDesktop from '../components/common/SidebarDesktop'
 import {Container,Row,Col,Card} from 'react-bootstrap'
  
+import {Redirect} from 'react-router-dom'
+
 
 export class OrderListPage extends Component {
 
@@ -17,6 +19,12 @@ export class OrderListPage extends Component {
      } 
 
      render() {
+          
+ if(!localStorage.getItem('token')){
+     return <Redirect  to="/landing" />}
+   
+   
+   
 
           const User = this.props.user;
 

@@ -11,6 +11,8 @@ import NavMenuMobile from '../components/common/NavMenuMobile'
 import Category from '../components/ProductDetails/Category'
 import axios from 'axios'
 
+import {Redirect} from 'react-router-dom'
+
  class ProductCategoryPage extends Component {
 
      constructor({match}){
@@ -35,6 +37,10 @@ import axios from 'axios'
      } 
 
      render() {
+          
+ if(!localStorage.getItem('token')){
+     return <Redirect  to="/landing" />}
+   
           return (
               <Fragment> 
 

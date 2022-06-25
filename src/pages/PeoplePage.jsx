@@ -6,7 +6,7 @@ import SidebarDesktop from '../components/common/SidebarDesktop'
 import {Container,Row,Col,Card} from 'react-bootstrap'
 import AppBar from '../components/common/AppBar'
 import FooterSocial from '../components/common/FooterSocial'
-
+import {Redirect} from 'react-router-dom'
 
 
 
@@ -21,6 +21,11 @@ export class PeoplePage extends Component {
 }
 
      render() { 
+          
+ if(!localStorage.getItem('token')){
+     return <Redirect  to="/landing" />}
+   
+   
           return (   
                <Fragment>
 
