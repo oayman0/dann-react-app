@@ -23,6 +23,12 @@
 @import "cartList.css";
 @import "sidebar.css";
 @import "rightbar.css";
+@import "post.css";
+@import "postinput.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
 
