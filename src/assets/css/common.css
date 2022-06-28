@@ -1,5 +1,7 @@
 html {
      height: auto !important;
+     -webkit-tap-highlight-color: transparent !important;
+
  }
  body {
      background-color: #FAFDFB !important;
