@@ -64,10 +64,9 @@
      {/* Insert Content Here */}
                          
                     <HomeTop/>
-     
+                    <Categories />
                          <FeaturedProducts />
                          <NewArrival />
-                         <Categories />
                          <Collection />                    
                      
                          <FooterDesktop/>                    

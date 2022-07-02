@@ -29,13 +29,14 @@ class Categories extends Component {
      render() {
 
           const CatList = this.state.MenuData;
+          
           const MyView = CatList.map((CatList,i)=>{
-               return <Col key={i.toString()} className="p-0" key={1} xl={2} lg={2} md={2} sm={6} xs={6}>
+               return <Col key={i.toString()} className="p-0"  xl={2} lg={2} md={2} sm={3} xs={3}>
                <Link className="text-link" to={"/productcategory/"+CatList.category_name}>    
                <Card className="h-100 w-100 text-center">          
                <Card.Body> 
                <img className="center" src={CatList.category_image} />  
-               <h5 className="category-name">{CatList.category_name}</h5>  
+               <h5 className="category-name pt-3">{CatList.category_name}</h5>  
                </Card.Body>
                </Card> 
                </Link> 
@@ -50,9 +51,10 @@ class Categories extends Component {
 
                     <div className={this.state.mainDiv}>
                   <Container className="text-center" fluid={true}>
-          <div className="section-title text-center mb-55"><h2> Categories</h2>
+          {/* <div className="section-title text-center mb-55">
+               <h2> Categories</h2>
           <p>Some of our exclusive collection, you may like</p>
-          </div>
+          </div> */}
 
           <Row> 
                {MyView}

@@ -8,11 +8,23 @@ import AppBar from '../components/common/AppBar'
 import FooterSocial from '../components/common/FooterSocial'
 import RightBar from '../components/explore/RightBar'
 import {Redirect} from 'react-router-dom'
+
 import Post from '../components/home/Post'
+
 import PostInput from '../components/others/PostInput'
-import profile1 from '../assets/images/profile1.png';
-import profile2 from '../assets/images/profile2.jpg';
-import postimage from '../assets/images/product/product1.png';
+
+
+import Skincare from '../assets/images/post/skincare.jpg';
+import Bags from '../assets/images/post/bagsjpg.jpg';
+import Velo from '../assets/images/post/Velo.jpg';
+import Shazly from '../assets/images/post/Shazly.jpg';
+import Bambino from '../assets/images/post/Bambino.jpg';
+import Qwareer from '../assets/images/post/Qwareer.jpg';
+import Mekkawy from '../assets/images/post/Mekkawy.jpg';
+import Hamada from '../assets/images/post/Hamada.jpg';
+import School from '../assets/images/post/School.jpg';
+
+
 
 export class HomePage extends Component {
 
@@ -46,8 +58,23 @@ export class HomePage extends Component {
                          <div  style={{ margin: 20 }}>
                               <PostInput />
                          </div>
-                         <Post displayName="Omar Ayman" username="omar_96" text="New sales in Apprel House store" avatar = {profile1}/> 
-                         <Post displayName="Ahmed Gamal" username="jimmy" text="I just bought this" avatar = {profile2} image={postimage}/> 
+                         <Post displayName="Velo" username="Velo" text="Discover the new collection for women and men, featuring lightweight knits, pastel sweats, super soft T-shirts, classic jeans, dresses and more" avatar = {Velo}/> 
+
+                         <Post displayName="Qwareer" username="Qwareer" text="It's time to shine with our new collection of makeup and skin care products, don't forget to ask about our unique offer " avatar = {Qwareer} image={Skincare}/> 
+
+                         <Post displayName="Bambino" username="Bambino" text="Make your baby happy with our new collection, all what you need for your children is now in one place" avatar = {Bambino}/> 
+
+                         <Post displayName="El Mekkawy" username="Mekkawy" text="Thinking about renewing your house now is the best time with multiple offers and sales in our different branches " avatar = {Mekkawy}/> 
+
+                         <Post displayName="Hamada" username="Hamada" text="New bags and accessories collection has arrived, make your outfit stunning " avatar = {Hamada} image={Bags}/> 
+
+                         <Post displayName="Elshazly" username="Shazly" text="Do you like reading books?
+                    50%off discount when buying more than 2 books" avatar = {Shazly}/> 
+
+                         <Post displayName="Elshazly" username="Elshazly" text="Back to school needs some shopping and we got you in this " avatar = {Shazly} image={School}/> 
+                    
+
+
                     </Col> 
 
                     <Col lg={4} md={4} sm={4} xs={4}>      

@@ -2,7 +2,7 @@ import { CalendarIcon, ChartBarIcon, EmojiHappyIcon, PhotographIcon, XIcon } fro
 import React from 'react'
 import { useRef, useState } from "react";
 
-import profile1 from '../../assets/images/kaziariyan.png';
+import profile1 from '../../assets/images/logopic.jpg';
 
 // import "emoji-mart/css/emoji-mart.css";
 // import { Picker } from "emoji-mart";
