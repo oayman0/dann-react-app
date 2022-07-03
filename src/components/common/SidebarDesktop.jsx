@@ -22,7 +22,7 @@ class SidebarDesktop extends Component {
 <Link to="/" className="btn"><i class="fa fa-home" aria-hidden="true"></i><h4>Home</h4> </Link>
  <Link to="/explore" className="btn"><i className="fas fa-map"></i><h4>Explore</h4></Link>
  <Link to="/marketplace" className="btn"><i className="fas fa-store"></i><h4>Marketplace</h4></Link>
- <Link to="/people" className="btn"><i className="fas fa-users"></i><h4>People</h4></Link>
+ <Link to="/people" className="btn"><i className="fas fa-users"></i><h4>Near By</h4></Link>
 <div className="sidebarDown">
  <Link to="/messages" className="btn"><i class="far fa-comments"></i><h4>Messages</h4>
  {/* <sup><span className="badge text-white bg-warning">5</span></sup> */}

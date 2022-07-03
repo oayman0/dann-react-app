@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from 'react'
-import FooterDesktop from '../components/common/FooterDesktop'
+// import FooterDesktop from '../components/common/FooterDesktop'
 import NavMenuDesktop from '../components/common/NavMenuDesktop'
 import NavMenuMobile from '../components/common/NavMenuMobile'
 import SidebarDesktop from '../components/common/SidebarDesktop'
 import {Container,Row,Col,Card} from 'react-bootstrap'
 import AppBar from '../components/common/AppBar'
-import FooterSocial from '../components/common/FooterSocial'
+// import FooterSocial from '../components/common/FooterSocial'
 import RightBar from '../components/explore/RightBar'
 import {Redirect} from 'react-router-dom'
 

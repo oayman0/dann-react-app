@@ -5,7 +5,7 @@ import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import RepeatIcon from "@mui/icons-material/Repeat";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import PublishIcon from "@mui/icons-material/Publish";
-import createSvgIcon from "@mui/icons-material/utils/createSvgIcon";
+//import createSvgIcon from "@mui/icons-material/utils/createSvgIcon";
 
 const Post = forwardRef(
   ({ displayName, username, verified, text, image, avatar }, ref) => {

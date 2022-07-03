@@ -4,6 +4,9 @@ import axios from 'axios'
 import { Link } from 'react-router-dom';
 
 class MegaMenuAll extends Component {
+     logout = () => {
+          localStorage.clear();
+      }
     
      constructor(){
           super();
@@ -45,6 +48,7 @@ class MegaMenuAll extends Component {
       <button onClick={this.MenuItemClick} className="accordionAll">
       <img className="accordionMenuIconAll" src={CatList.category_image} />&nbsp; {CatList.category_name}
                         </button>
+                        
           <div className="panelAll">
       <ul>
           {
@@ -63,7 +67,7 @@ class MegaMenuAll extends Component {
 
           });
 
-
+          
 
           return (
                 <div className="accordionMenuDivAll">
@@ -72,7 +76,9 @@ class MegaMenuAll extends Component {
                    {MyView}
 
                    </div>
-
+                   <div style={{textAlign: 'center', alignSelf: 'center'}}>
+                   <Link style={{textAlign: 'center', alignSelf: 'center'}} to="/" onClick={this.logout} className="btn"><i class="fas fa-sign-out-alt"></i><h4>Logout</h4></Link>
+                   </div>
               </div>
           )
      }

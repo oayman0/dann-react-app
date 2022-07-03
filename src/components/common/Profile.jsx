@@ -3,7 +3,7 @@ import { Fragment } from 'react'
 import {Navbar,Container, Row, Col,Button,Card,Modal,ListGroup,ListGroupItem} from 'react-bootstrap';
 import { Redirect  } from 'react-router';
 import { Link } from 'react-router-dom';
-import Ariyan from '../../assets/images/kaziariyan.png'
+import image from '../../assets/images/image3.jpg'
 class Profile extends Component {
      render() { 
 
@@ -30,7 +30,7 @@ class Profile extends Component {
                     <Col lg={4} md={4} sm={12} >
 
                     <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src={Ariyan} className="userprofile" />
+  <Card.Img variant="top" src={image} className="userprofile" style = {{ objectFit:"cover"}}/>
  
   <ListGroup className="list-group-flush">
         
@@ -49,8 +49,8 @@ class Profile extends Component {
 
                     <Col lg={8} md={8} sm={12} >
                     <ul className="list-group">
-<li className="list-group-item">Name :  {name} </li>
-<li className="list-group-item">Email :  {email} </li>
+<li className="list-group-item">Name :  Ayman Zaki </li>
+<li className="list-group-item">Email :  aymanzakii@gmail.com </li>
                </ul>
                     </Col>
 
